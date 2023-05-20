@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .menu-item {
-  @apply font-medium mx-4 hover:text-evergreen transition duration-300;
+  @apply font-medium hover:text-evergreen transition duration-300;
 }
 
 .active {
@@ -11,5 +11,13 @@
 }
 
 .btn {
-  @apply text-white bg-evergreen px-4 py-1 rounded hover:text-opacity-90 transition duration-300;
+  @apply text-white bg-evergreen px-4 py-1 rounded  transition duration-300 hover:text-opacity-90;
+}
+
+.btn-green-lg {
+  @apply text-white bg-evergreen px-8 py-3 rounded-full  transition duration-300 hover:text-opacity-80 lg:px-12;
+}
+
+.btn-green-lg-outline {
+  @apply text-white border border-evergreen px-8 py-3 rounded-full text-opacity-80 transition duration-300 hover:bg-evergreen hover:text-opacity-100 lg:px-12;
 }

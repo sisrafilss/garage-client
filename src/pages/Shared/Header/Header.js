@@ -1,20 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="flex justify-between px-6 py-3 bg-mintfrost text-twilight">
+   <div className="bg-mintfrost py-3">
+     <nav className="container flex justify-between   text-twilight">
       <div>
-        <Link to="/">GARAGE</Link>
+        <NavLink to="/">GARAGE</NavLink>
       </div>
-      <div>
-        <Link   className=" menu-item active" to="/">Home</Link>
-        <Link   className="menu-item" to="/about">About</Link>
-        <Link   className="menu-item" to="/services">Services</Link>
-        <Link   className="menu-item" to="/login">Login</Link>
-        <button className="btn" to="/">Get a Quote</button>
+      <div className="flex space-x-12">
+        <NavLink className=" menu-item" to="/">
+          Home
+        </NavLink>
+        <NavLink className="menu-item" to="/about">
+          About
+        </NavLink>
+        <NavLink className="menu-item" to="/services">
+          Services
+        </NavLink>
+        <NavLink className="menu-item" to="/login">
+          Login
+        </NavLink>
+        <button className="btn" to="/">
+          Get a Quote
+        </button>
       </div>
     </nav>
+   </div>
   );
 };
 

@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu-item {
+  @apply font-medium mx-4 hover:text-evergreen transition duration-300;
+}
+
+.active {
+  @apply text-evergreen;
+}
+
+.btn {
+  @apply text-white bg-evergreen px-4 py-1 rounded hover:text-opacity-90 transition duration-300;
+}

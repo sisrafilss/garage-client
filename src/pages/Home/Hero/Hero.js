@@ -19,7 +19,7 @@ const Hero = () => {
             <button className="btn btn-green-lg-outline">Contact Us</button>
           </div>
         </div>
-        <div className="shrink-0  sm:w-5/12">
+        <div className="shrink-0  sm:w-5/12 hidden sm:flex">
           <img src={heroImg} alt="" />
         </div>
       </div>

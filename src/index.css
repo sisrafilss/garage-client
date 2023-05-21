@@ -1,27 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .menu-item {
+    @apply font-medium hover:text-evergreen transition duration-300;
+  }
 
-.menu-item {
-  @apply font-medium hover:text-evergreen transition duration-300;
-}
+  .active {
+    @apply text-evergreen;
+  }
 
-.active {
-  @apply text-evergreen;
-}
+  .btn {
+    @apply text-white text-sm font-medium   rounded  transition duration-300 hover:text-opacity-90;
+  }
 
-.btn {
-  @apply text-white text-sm font-medium   rounded  transition duration-300 hover:text-opacity-90;
-}
+  .btn-green-sm {
+    @apply bg-evergreen px-4 py-1;
+  }
 
-.btn-green-sm {
-  @apply bg-evergreen px-4 py-1;
-}
+  .btn-green-lg {
+    @apply rounded-full bg-evergreen hover:text-opacity-80 px-4 py-2 uppercase md:px-8  lg:px-12 lg:py-3;
+  }
 
-.btn-green-lg {
-  @apply rounded-full bg-evergreen hover:text-opacity-80 px-4 py-2  md:px-8  lg:px-12 lg:py-3;
-}
+  .btn-green-lg-outline {
+    @apply border border-evergreen rounded-full text-opacity-80 uppercase hover:bg-evergreen hover:text-opacity-100 px-4 py-2 md:px-8 lg:px-12 lg:py-3;
+  }
 
-.btn-green-lg-outline {
-  @apply border border-evergreen rounded-full text-opacity-80  hover:bg-evergreen hover:text-opacity-100 px-4 py-2 md:px-8 lg:px-12 lg:py-3;
+  .my-class {
+    transition: 0.3s;
+  }
 }

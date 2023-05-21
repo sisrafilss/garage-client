@@ -21,7 +21,7 @@ const Header = () => {
         <NavLink className="menu-item" to="/login">
           Login
         </NavLink>
-        <button className="btn" to="/">
+        <button className="btn btn-green-sm" to="/">
           Get a Quote
         </button>
       </div>

@@ -11,13 +11,17 @@
 }
 
 .btn {
-  @apply text-white bg-evergreen px-4 py-1 rounded  transition duration-300 hover:text-opacity-90;
+  @apply text-white text-sm font-medium   rounded  transition duration-300 hover:text-opacity-90;
+}
+
+.btn-green-sm {
+  @apply bg-evergreen px-4 py-1;
 }
 
 .btn-green-lg {
-  @apply text-white bg-evergreen px-8 py-3 rounded-full  transition duration-300 hover:text-opacity-80 lg:px-12;
+  @apply rounded-full bg-evergreen hover:text-opacity-80 px-4 py-2  md:px-8  lg:px-12 lg:py-3;
 }
 
 .btn-green-lg-outline {
-  @apply text-white border border-evergreen px-8 py-3 rounded-full text-opacity-80 transition duration-300 hover:bg-evergreen hover:text-opacity-100 lg:px-12;
+  @apply border border-evergreen rounded-full text-opacity-80  hover:bg-evergreen hover:text-opacity-100 px-4 py-2 md:px-8 lg:px-12 lg:py-3;
 }

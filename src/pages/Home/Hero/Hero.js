@@ -9,14 +9,14 @@ const Hero = () => {
           <h1 className="text-3xl md:text-4xl xl:text-6xl">
             Highly Modified Car Repair system And Maintenance
           </h1>
-          <p>
+          <p className="text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam,
           </p>
           <div className="flex justify-between w-full">
-            <button className="btn-green-lg">Explore More</button>
-            <button className="btn-green-lg-outline">Contact Us</button>
+            <button className="btn btn-green-lg">Explore More</button>
+            <button className="btn btn-green-lg-outline">Contact Us</button>
           </div>
         </div>
         <div className="shrink-0  sm:w-5/12">

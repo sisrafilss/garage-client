@@ -4,7 +4,7 @@ import heroImg from "../../../media/img/hero-img.png";
 const Hero = () => {
   return (
     <div className=" bg-twilight ">
-      <div className="container flex flex-col justify-between space-x-8 py-12 sm:flex-row">
+      <div className="container flex flex-col justify-between py-12 space-x-8 space-y-12 sm:space-y-0 sm:flex-row">
         <div className="flex flex-col  justify-center items-center px-4 text-white space-y-6 sm:items-start sm:space-y-8 sm:w-7/12">
           <h1 className="text-3xl md:text-4xl xl:text-6xl">
             Highly Modified Car Repair system And Maintenance

@@ -5,6 +5,7 @@ import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
 import BodyText from "../../Shared/ReusableComponents/BodyText";
 import ServiceCard from "./ServiceCard";
 import ButtonFullOutline from "../../Shared/Buttons/ButtonFullOutline";
+import ServiceList from "./ServiceList";
 
 const services = [
   {
@@ -57,22 +58,13 @@ const BestServices = () => {
       <div className="max-w-3xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
         <Subtitle className="text-center">best services</Subtitle>
         <HeadingH2 className="text-center">Provide our best services</HeadingH2>
-        <BodyText className="text-center ">
+        <BodyText className="mx-auto text-center max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam
         </BodyText>
       </div>
-      <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-1 sm:gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-4">
-        {services.map((data) => (
-          <ServiceCard key={data.id} className="mx-auto md:mx-0" cardData={data} />
-        ))}
-
-       
-      </div>
-      <div className="mt-6">
-            <ButtonFullOutline>View All Services</ButtonFullOutline>
-        </div>
+      <ServiceList services={services} />
     </Section>
   );
 };

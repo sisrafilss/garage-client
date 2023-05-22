@@ -8,12 +8,13 @@ import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
 import BodyText from "../../Shared/ReusableComponents/BodyText";
 import AttentionBox from "./AttentionBox";
 import LargeGreenButton from "../../Shared/ReusableComponents/LargeGreenButton";
+import Section from "../../Shared/ReusableComponents/Section";
 
 const images = [img1, img2, img3, img4];
 
 const AboutSection = () => {
   return (
-    <div className="py-10 container sm:flex sm:space-x-8 sm:py-12 md:py-16 lg:py-20">
+    <Section className="container sm:flex sm:space-x-8">
       <div className="hidden sm:w-1/2 sm:grid  sm:grid-cols-2 md:grid-cols-2  gap-4 md:p-4">
         {images.map((img, idx) => (
           <div key={idx} className="md:shrink-0">
@@ -22,8 +23,10 @@ const AboutSection = () => {
         ))}
       </div>
       <div className="space-y-5 sm:w-1/2 md:p-4">
-        <Subtitle> About Us</Subtitle>
-        <HeadingH2>Welcome to our car repairing shop</HeadingH2>
+        <Subtitle className="sm:text-left"> About Us</Subtitle>
+        <HeadingH2 className="sm:text-left">
+          Welcome to our car repairing shop
+        </HeadingH2>
         <BodyText>
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -43,7 +46,7 @@ const AboutSection = () => {
           <LargeGreenButton>About More</LargeGreenButton>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 

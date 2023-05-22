@@ -9,6 +9,7 @@ const Home = () => {
       <Hero />
       <AboutSection />
       <BestServices />
+      <div className="py-96"></div>
     </div>
   );
 };

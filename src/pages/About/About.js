@@ -1,12 +1,16 @@
 import React from "react";
+import PageTopHeader from "../Shared/ReusableComponents/PageTopHeader";
+import AboutSection from "../Home/AboutSection/AboutSection";
+import MissionAndFaq from "../Home/MissionAndFaq/MissionAndFaq";
+import SectionWrapper from "../Shared/ReusableComponents/SectionWrapper";
 
 const About = () => {
   return (
-    <div>
-      <h2 className="text-5xl text-evergreen mt-10 text-center">
-        Thi is About Page
-      </h2>
-    </div>
+    <SectionWrapper>
+      <PageTopHeader pageName="About Us" />
+      <AboutSection showBtn={false} />
+      <MissionAndFaq />
+    </SectionWrapper>
   );
 };
 

@@ -5,17 +5,18 @@ import BestServices from "../BestServices/BestServices";
 import TestimonialSection from "../TestimonialSection/TestimonialSection";
 import MissionAndFaq from "../MissionAndFaq/MissionAndFaq";
 import BlogSection from "../BlogSection/BlogSection";
+import SectionWrapper from "../../Shared/ReusableComponents/SectionWrapper";
 
 const Home = () => {
   return (
-    <div className="space-y-10 sm:space-y-12 md:space-y-16 lg:space-y-20">
+    <SectionWrapper>
       <Hero />
       <AboutSection />
       <BestServices />
       <TestimonialSection />
       <MissionAndFaq />
       <BlogSection />
-    </div>
+    </SectionWrapper>
   );
 };
 

@@ -9,10 +9,9 @@ import BodyText from "../../Shared/ReusableComponents/BodyText";
 import AttentionBox from "./AttentionBox";
 import LargeGreenButton from "../../Shared/ReusableComponents/LargeGreenButton";
 
-
 const images = [img1, img2, img3, img4];
 
-const AboutSection = () => {
+const AboutSection = ({ showBtn = true }) => {
   return (
     <section className="container sm:flex sm:space-x-8">
       <div className="hidden sm:w-1/2 sm:grid  sm:grid-cols-2 md:grid-cols-2  gap-4 md:p-4">
@@ -42,9 +41,13 @@ const AboutSection = () => {
           <AttentionBox info1="15+" info2="Experience Member" />
           <AttentionBox info1="2K+" info2="Satisfied Clients" />
         </div>
-        <div className="flex justify-center pt-2 sm:justify-start">
-          <LargeGreenButton>About More</LargeGreenButton>
-        </div>
+        {showBtn ? (
+          <div className="flex justify-center pt-2 sm:justify-start">
+            <LargeGreenButton>About More</LargeGreenButton>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </section>
   );

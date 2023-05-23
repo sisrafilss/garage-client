@@ -24,9 +24,9 @@ const testimonials = [
   },
 ];
 
-const TestimonialSection = () => {
+const TestimonialSection = ({className}) => {
   return (
-    <section className="container space-y-6">
+    <section className={`container space-y-6 ${className}`}>
       <div className="space-y-6">
         <Subtitle>Testimonial</Subtitle>
         <HeadingH2>What our clients saying?</HeadingH2>

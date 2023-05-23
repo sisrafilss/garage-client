@@ -9,7 +9,7 @@ const About = () => {
     <SectionWrapper>
       <PageTopHeader pageName="About Us" />
       <AboutSection showBtn={false} />
-      <MissionAndFaq />
+      <MissionAndFaq className="pb-10 sm:pb-12 md:pb-16 lg:pb-20" />
     </SectionWrapper>
   );
 };

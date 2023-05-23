@@ -8,12 +8,13 @@ import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
 import BodyText from "../../Shared/ReusableComponents/BodyText";
 import AttentionBox from "./AttentionBox";
 import LargeGreenButton from "../../Shared/ReusableComponents/LargeGreenButton";
+import { Link } from "react-router-dom";
 
 const images = [img1, img2, img3, img4];
 
-const AboutSection = ({ showBtn = true }) => {
+const AboutSection = ({className, showBtn = true }) => {
   return (
-    <section className="container sm:flex sm:space-x-8">
+    <section className={`container sm:flex sm:space-x-8 ${className}`}>
       <div className="hidden sm:w-1/2 sm:grid  sm:grid-cols-2 md:grid-cols-2  gap-4 md:p-4">
         {images.map((img, idx) => (
           <div key={idx} className="md:shrink-0">
@@ -43,7 +44,9 @@ const AboutSection = ({ showBtn = true }) => {
         </div>
         {showBtn ? (
           <div className="flex justify-center pt-2 sm:justify-start">
-            <LargeGreenButton>About More</LargeGreenButton>
+            <LargeGreenButton>
+              <Link to="/about">About More</Link>
+            </LargeGreenButton>
           </div>
         ) : (
           ""

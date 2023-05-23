@@ -1,13 +1,13 @@
-import React from "react";
+import React, { Children } from "react";
 import heroImg from "../../../media/img/hero-img.png";
 import LargeGreenButton from "../../Shared/ReusableComponents/LargeGreenButton";
 import LargeGreenOutlineButton from "../../Shared/ReusableComponents/LargeGreenOutlineButton";
 import BodyText from "../../Shared/ReusableComponents/BodyText";
 import HeadingH1 from "../../Shared/ReusableComponents/HeadingH1";
 
-const Hero = () => {
+const Hero = ({className}) => {
   return (
-    <div className="bg-twilight ">
+    <div className={`bg-twilight ${className}`}>
       <div className="container flex flex-col justify-between py-12 space-x-8 space-y-12 sm:space-y-0 sm:flex-row">
         <div className="flex flex-col  justify-center items-center px-4 text-white space-y-6 sm:items-start sm:space-y-8 sm:w-7/12">
           <HeadingH1>

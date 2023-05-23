@@ -27,9 +27,9 @@ const blogData = [
   },
 ];
 
-const BlogSection = () => {
+const BlogSection = ({ className }) => {
   return (
-    <section className="container space-y-8">
+    <section className={`container space-y-8 ${className}`}>
       <div className="space-y-4">
         <Subtitle>Blog/news</Subtitle>
         <HeadingH2>checkout our latest blog</HeadingH2>
@@ -41,7 +41,7 @@ const BlogSection = () => {
       </div>
       <ResponsiveCard>
         {blogData.map((blog, index) => (
-          <BlogCard key={index} blog={blog}/>
+          <BlogCard key={index} blog={blog} />
         ))}
       </ResponsiveCard>
     </section>

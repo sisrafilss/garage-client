@@ -49,9 +49,9 @@ const services = [
   },
 ];
 
-const BestServices = () => {
+const BestServices = ({ className, showDetailBtn = true }) => {
   return (
-    <section className="container space-y-8">
+    <section className={`container space-y-8 ${className}`}>
       <div className="max-w-3xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
         <Subtitle className="text-center">best services</Subtitle>
         <HeadingH2 className="text-center">Provide our best services</HeadingH2>
@@ -61,7 +61,7 @@ const BestServices = () => {
           minim veniam
         </BodyText>
       </div>
-      <ServiceList services={services} />
+      <ServiceList showDetailBtn={showDetailBtn} services={services} />
     </section>
   );
 };

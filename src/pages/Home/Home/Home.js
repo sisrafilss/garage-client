@@ -15,7 +15,7 @@ const Home = () => {
       <BestServices />
       <TestimonialSection />
       <MissionAndFaq />
-      <BlogSection />
+      <BlogSection className="pb-10 sm:pb-12 md:pb-16 lg:pb-20" />
     </SectionWrapper>
   );
 };

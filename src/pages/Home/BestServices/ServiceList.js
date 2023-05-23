@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 import ButtonFullOutline from "../../Shared/Buttons/ButtonFullOutline";
 import ResponsiveCard from "../../Shared/ReusableComponents/ResponsiveCard";
 
-const ServiceList = ({ services }) => {
+const ServiceList = ({ services, showDetailBtn }) => {
   return (
     <>
       <ResponsiveCard>
@@ -15,9 +15,13 @@ const ServiceList = ({ services }) => {
           />
         ))}
       </ResponsiveCard>
-      <div className="mt-6">
-        <ButtonFullOutline>View All Services</ButtonFullOutline>
-      </div>
+      {showDetailBtn ? (
+        <div className="mt-6">
+          <ButtonFullOutline>View All Services</ButtonFullOutline>
+        </div>
+      ) : (
+        ""
+      )}
     </>
   );
 };

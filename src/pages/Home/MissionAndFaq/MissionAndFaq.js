@@ -23,7 +23,7 @@ const faqData = [
   },
 ];
 
-const MissionAndFaq = () => {
+const MissionAndFaq = ({className}) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleAccordion = (index) => {
@@ -31,7 +31,7 @@ const MissionAndFaq = () => {
   };
 
   return (
-    <section className="container space-y-10 sm:grid sm:space-y-0 sm:grid-cols-2 sm:gap-x-6">
+    <section className={`container space-y-10 sm:grid sm:space-y-0 sm:grid-cols-2 sm:gap-x-6 ${className}`}>
       <Mission />
       <div className="ring-1 ring-[#D9D9D9]  rounded-[10px] py-4 px-4 space-y-7 shadow sm:">
         <FAQ

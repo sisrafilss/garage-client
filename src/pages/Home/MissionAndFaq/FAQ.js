@@ -6,6 +6,7 @@ import {
 } from "react-icons/io";
 import BodyText from "../../Shared/ReusableComponents/BodyText";
 import Subtitle from "../../Shared/ReusableComponents/Subtitle";
+import HeadingH5 from "../../Shared/ReusableComponents/HeadingH5";
 
 const FAQ = ({ faqData, activeIndex, handleAccordion }) => {
   return (
@@ -24,7 +25,7 @@ const FAQ = ({ faqData, activeIndex, handleAccordion }) => {
                 <IoIosArrowDroprightCircle className="text-3xl text-twilight" />
               )}
 
-              <h5 className="text-base font-medium md:text-lg">{item.question}</h5>
+              <HeadingH5>{item.question}</HeadingH5>
             </div>
             <Collapse isOpened={index === activeIndex}>
               <BodyText className="text-justify pl-1">{item.answer}</BodyText>

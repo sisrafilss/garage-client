@@ -4,7 +4,7 @@ import BodyText from "../ReusableComponents/BodyText";
 
 const ContactInfo = () => {
   return (
-    <div className="space-y-3 md:space-y-0">
+    <div className="space-y-3 md:space-y-3">
       <HeadingH5 className="text-xl font-semibold">Contact Info</HeadingH5>
       <div className="flex flex-col">
         <BodyText>

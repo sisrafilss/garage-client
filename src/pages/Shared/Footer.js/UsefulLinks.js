@@ -4,7 +4,7 @@ import MenuItem from '../Header/MenuItem';
 
 const UsefulLinks = () => {
     return (
-        <div className="space-y-3 md:space-y-0">
+        <div className="space-y-3 md:space-y-3">
           <HeadingH5 className="text-xl font-semibold">Useful Links</HeadingH5>
           <div className="flex flex-col">
             <MenuItem></MenuItem>

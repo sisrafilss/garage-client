@@ -5,7 +5,7 @@ import SocialMedia from './SocialMedia';
 
 const AboutGarage = () => {
     return (
-        <div className="space-y-3 md:space-y-0">
+        <div className="space-y-3 md:space-y-3">
         <Logo />
         <BodyText className="max-w-sm ">
           Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do

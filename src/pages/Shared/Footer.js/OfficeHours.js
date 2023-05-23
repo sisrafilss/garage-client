@@ -1,10 +1,9 @@
 import React from "react";
 import HeadingH5 from "../ReusableComponents/HeadingH5";
-import BodyText from "../ReusableComponents/BodyText";
 
 const OfficeHours = () => {
   return (
-    <div className="space-y-3 md:space-y-0">
+    <div className="space-y-3 md:space-y-3">
       <HeadingH5 className="text-xl font-semibold">Opening Hours</HeadingH5>
       <div className="text-black text-sm lg:text-base flex flex-col">
         <div className="space-y-2">

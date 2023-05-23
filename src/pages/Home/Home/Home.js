@@ -3,6 +3,8 @@ import Hero from "../Hero/Hero";
 import AboutSection from "../AboutSection/AboutSection";
 import BestServices from "../BestServices/BestServices";
 import TestimonialSection from "../TestimonialSection/TestimonialSection";
+import MissionAndFaq from "../MissionAndFaq/MissionAndFaq";
+
 
 const Home = () => {
   return (
@@ -11,7 +13,8 @@ const Home = () => {
       <AboutSection />
       <BestServices />
       <TestimonialSection />
-      {/* <div className="py-96"></div> */}
+      <MissionAndFaq />
+      <div className="py-96"></div>
     </div>
   );
 };

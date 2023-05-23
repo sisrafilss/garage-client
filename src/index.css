@@ -14,3 +14,7 @@
     transition: 0.3s;
   }
 }
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import SmallGreenButton from "../ReusableComponents/SmallGreenButton";
-import MenuItem from "./MenuItem";
 import Navbar from "./Navbar";
 
 const Header = () => {

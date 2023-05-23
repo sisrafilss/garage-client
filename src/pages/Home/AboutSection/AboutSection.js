@@ -8,13 +8,13 @@ import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
 import BodyText from "../../Shared/ReusableComponents/BodyText";
 import AttentionBox from "./AttentionBox";
 import LargeGreenButton from "../../Shared/ReusableComponents/LargeGreenButton";
-import Section from "../../Shared/ReusableComponents/Section";
+
 
 const images = [img1, img2, img3, img4];
 
 const AboutSection = () => {
   return (
-    <Section className="container sm:flex sm:space-x-8">
+    <section className="container sm:flex sm:space-x-8">
       <div className="hidden sm:w-1/2 sm:grid  sm:grid-cols-2 md:grid-cols-2  gap-4 md:p-4">
         {images.map((img, idx) => (
           <div key={idx} className="md:shrink-0">
@@ -46,7 +46,7 @@ const AboutSection = () => {
           <LargeGreenButton>About More</LargeGreenButton>
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

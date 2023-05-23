@@ -8,14 +8,13 @@ import BlogSection from "../BlogSection/BlogSection";
 
 const Home = () => {
   return (
-    <div>
+    <div className="space-y-10 sm:space-y-12 md:space-y-16 lg:space-y-20">
       <Hero />
       <AboutSection />
       <BestServices />
       <TestimonialSection />
       <MissionAndFaq />
       <BlogSection />
-      <div className="py-96"></div>
     </div>
   );
 };

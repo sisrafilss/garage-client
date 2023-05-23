@@ -1,10 +1,7 @@
 import React from "react";
-import Section from "../../Shared/ReusableComponents/Section";
 import Subtitle from "../../Shared/ReusableComponents/Subtitle";
 import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
 import BodyText from "../../Shared/ReusableComponents/BodyText";
-import ServiceCard from "./ServiceCard";
-import ButtonFullOutline from "../../Shared/Buttons/ButtonFullOutline";
 import ServiceList from "./ServiceList";
 
 const services = [
@@ -54,7 +51,7 @@ const services = [
 
 const BestServices = () => {
   return (
-    <Section className="container space-y-8">
+    <section className="container space-y-8">
       <div className="max-w-3xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
         <Subtitle className="text-center">best services</Subtitle>
         <HeadingH2 className="text-center">Provide our best services</HeadingH2>
@@ -65,7 +62,7 @@ const BestServices = () => {
         </BodyText>
       </div>
       <ServiceList services={services} />
-    </Section>
+    </section>
   );
 };
 

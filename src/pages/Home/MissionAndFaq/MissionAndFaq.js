@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Section from "../../Shared/ReusableComponents/Section";
 import Mission from "./Mission";
 import FAQ from "./FAQ";
 
@@ -32,7 +31,7 @@ const MissionAndFaq = () => {
   };
 
   return (
-    <Section className="container space-y-10 sm:grid sm:space-y-0 sm:grid-cols-2 sm:gap-x-6">
+    <section className="container space-y-10 sm:grid sm:space-y-0 sm:grid-cols-2 sm:gap-x-6">
       <Mission />
       <div className="ring-1 ring-[#D9D9D9]  rounded-[10px] py-4 px-4 space-y-7 shadow sm:">
         <FAQ
@@ -41,7 +40,7 @@ const MissionAndFaq = () => {
           faqData={faqData}
         />
       </div>
-    </Section>
+    </section>
   );
 };
 

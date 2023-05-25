@@ -3,7 +3,7 @@ import React from "react";
 const InputField = ({ type, label, placeholder, className }) => {
   return (
     <div className={`space-y-1 ${className}`}>
-      <label className="text-base ms-1 text-white" htmlFor="email">
+      <label className="text-base ms-1 text-white" htmlFor="">
         {label}
       </label>
       <input

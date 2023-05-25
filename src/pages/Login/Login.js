@@ -13,7 +13,7 @@ const Login = () => {
       <HeadingH1 className="text-white text-center">Login</HeadingH1>
       <FormContainer>
         <form className="space-y-5 ">
-          <div className="space-y-2">
+          <div className="space-y-4">
             <InputField
               type="Email"
               label="Email"
@@ -28,8 +28,8 @@ const Login = () => {
           <ButtonRegularGreen className="">Login</ButtonRegularGreen>
         </form>
         <BodyText className="text-center text-white">
-          Don't Have an Account?{" "}
-         <LinkedButton to="/register">Register Here</LinkedButton>
+          Don't Have an Account?
+          <LinkedButton to="/register">Register Here</LinkedButton>
         </BodyText>
       </FormContainer>
     </FormWrapper>

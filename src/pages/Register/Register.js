@@ -6,7 +6,6 @@ import InputField from "../Shared/ReusableComponents/InputField";
 import ButtonRegularGreen from "../Shared/Buttons/ButtonRegularGreen";
 import BodyText from "../Shared/ReusableComponents/BodyText";
 import LinkedButton from "../Login/LinkedButton";
-import HeadingH2 from "../Shared/ReusableComponents/HeadingH2";
 
 const Register = () => {
   return (

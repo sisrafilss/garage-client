@@ -8,45 +8,25 @@ const services = [
   {
     id: 1,
     imgURL: "https://i.ibb.co/g4vXJ7x/service-card-img.png",
-    title: "Engine Repair",
+    title: "Service",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
   },
   {
     id: 2,
     imgURL: "https://i.ibb.co/g4vXJ7x/service-card-img.png",
-    title: "Engine Repair",
+    title: "Diagnostics",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
   },
   {
     id: 3,
     imgURL: "https://i.ibb.co/g4vXJ7x/service-card-img.png",
-    title: "Engine Repair",
+    title: "Repairs",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
   },
-  {
-    id: 4,
-    imgURL: "https://i.ibb.co/g4vXJ7x/service-card-img.png",
-    title: "Engine Repair",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-  },
-  {
-    id: 5,
-    imgURL: "https://i.ibb.co/g4vXJ7x/service-card-img.png",
-    title: "Engine Repair",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-  },
-  {
-    id: 6,
-    imgURL: "https://i.ibb.co/g4vXJ7x/service-card-img.png",
-    title: "Engine Repair",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-  },
+ 
 ];
 
 const BestServices = ({ className, showDetailBtn = true }) => {

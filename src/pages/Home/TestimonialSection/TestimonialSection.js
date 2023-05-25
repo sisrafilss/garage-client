@@ -29,7 +29,7 @@ const TestimonialSection = ({className}) => {
     <section className={`container space-y-6 ${className}`}>
       <div className="space-y-6">
         <Subtitle>Testimonial</Subtitle>
-        <HeadingH2>What our clients saying?</HeadingH2>
+        <HeadingH2 className="text-center">What our clients saying?</HeadingH2>
       </div>
       <div className="sm:grid sm:grid-cols-1 md:grid-cols-2 md:gap-x-3 lg:grid-cols-3 lg:gap-x-4 ">
         {/* */}

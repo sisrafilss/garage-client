@@ -2,7 +2,6 @@ import React from "react";
 import Subtitle from "../../Shared/ReusableComponents/Subtitle";
 import BodyText from "../../Shared/ReusableComponents/BodyText";
 import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
-import HeadingH5 from "../../Shared/ReusableComponents/HeadingH5";
 import ResponsiveCard from "../../Shared/ReusableComponents/ResponsiveCard";
 import BlogCard from "./BlogCard";
 
@@ -32,7 +31,7 @@ const BlogSection = ({ className }) => {
     <section className={`container space-y-8 ${className}`}>
       <div className="space-y-4">
         <Subtitle>Blog/news</Subtitle>
-        <HeadingH2>checkout our latest blog</HeadingH2>
+        <HeadingH2 className="text-center">checkout our latest blog</HeadingH2>
         <BodyText className="max-w-[800px] text-center mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

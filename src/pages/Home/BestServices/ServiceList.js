@@ -3,9 +3,9 @@ import ServiceCard from "./ServiceCard";
 import ButtonFullOutline from "../../Shared/Buttons/ButtonFullOutline";
 import ResponsiveCard from "../../Shared/ReusableComponents/ResponsiveCard";
 
-const ServiceList = ({ services, showDetailBtn }) => {
+const ServiceList = ({ services, showDetailBtn, className }) => {
   return (
-    <>
+    <div className={`${className}`}>
       <ResponsiveCard>
         {services.map((data) => (
           <ServiceCard
@@ -22,7 +22,7 @@ const ServiceList = ({ services, showDetailBtn }) => {
       ) : (
         ""
       )}
-    </>
+    </div>
   );
 };
 

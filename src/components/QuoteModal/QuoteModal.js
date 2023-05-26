@@ -25,7 +25,7 @@ const QuoteModal = ({openModal, closeModal, isOpen}) => {
           placeholder="Enter your Car Name and Model"
         />
         <ButtonRegularGreen onClick={closeModal}>
-          <Link to="/services">Get an Instant Quote</Link>
+          <Link to="/select-service">Get an Instant Quote</Link>
         </ButtonRegularGreen>
       </ModalContainer>
     );

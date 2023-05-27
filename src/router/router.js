@@ -6,7 +6,7 @@ import Services from "../pages/Services/Services";
 import SelectService from "../pages/SelectService/SelectService";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
-import RepairRequest from "../pages/ServiceRequest/RepairRequest";
+import ServiceRequest from "../pages/ServiceRequest/ServiceRequest";
 
 export const router = createBrowserRouter([
   {
@@ -36,7 +36,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/select-service/:serviceId",
-        element: <RepairRequest />,
+        element: <ServiceRequest />,
       },
       {
         path: "/login",

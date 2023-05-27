@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Navbar from "./Navbar";
 import Logo from "../ReusableComponents/Logo";
 import QuoteModal from "../../../components/QuoteModal/QuoteModal";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);

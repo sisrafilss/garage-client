@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import SectionWrapper from "../Shared/ReusableComponents/SectionWrapper";
 import PageTopHeader from "../Shared/ReusableComponents/PageTopHeader";
-import { Link } from "react-router-dom";
-import BodyText from "../Shared/ReusableComponents/BodyText";
-import { BiSearch } from "react-icons/bi";
-import { TbMathGreater } from "react-icons/tb";
-import HeadingH5 from "../Shared/ReusableComponents/HeadingH5";
-import HeadingH3 from "../Shared/ReusableComponents/HeadingH3";
 import FeatureList from "./FeatureList";
 import Basket from "./Basket";
+import ColsWrapper from "../../components/ResponsiveLayout/ColsWrapper";
+import FeatureContainer from "../../components/ResponsiveLayout/FeatureContainer";
+import BasketContainer from "../../components/ResponsiveLayout/BasketContainer";
 
-const repairings = [
+export const repairings = [
   {
+    id: 1,
     title: "Brake discs and pads replacement (front) ",
     price: 259.49,
     discountPrice: 219.49,
@@ -35,6 +33,7 @@ const repairings = [
     ],
   },
   {
+    id: 2,
     title: "Brake discs and pads replacement (front) 2",
     price: 259.49,
     discountPrice: 219.49,
@@ -58,6 +57,7 @@ const repairings = [
     ],
   },
   {
+    id: 3,
     title: "Brake discs and pads replacement (front) 3",
     price: 259.49,
     discountPrice: 219.49,
@@ -81,6 +81,7 @@ const repairings = [
     ],
   },
   {
+    id: 4,
     title: "Brake discs and pads replacement (front)",
     price: 259.49,
     discountPrice: 219.49,
@@ -109,10 +110,14 @@ const ServiceRequest = () => {
   return (
     <SectionWrapper className="mb-12">
       <PageTopHeader pageName="What does your car need?" />
-      <div className="container lg:grid lg:grid-cols-12 lg:gap-4">
-        <FeatureList repairings={repairings} />
-        <Basket />
-      </div>
+      <ColsWrapper>
+        <FeatureContainer>
+          <FeatureList className="h-full" repairings={repairings} />
+        </FeatureContainer>
+        <BasketContainer>
+          <Basket className="h-auto" />
+        </BasketContainer>
+      </ColsWrapper>
     </SectionWrapper>
   );
 };

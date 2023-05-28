@@ -7,6 +7,7 @@ import SelectService from "../pages/SelectService/SelectService";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ServiceRequest from "../pages/ServiceRequest/ServiceRequest";
+import ServiceDetail from "../pages/ServiceRequest/ServiceDetail/ServiceDetail";
 
 export const router = createBrowserRouter([
   {
@@ -32,11 +33,17 @@ export const router = createBrowserRouter([
       {
         path: "/select-service",
         element: <SelectService />,
-
       },
       {
-        path: "/select-service/:serviceId",
+        path: "/select-service/repairs",
         element: <ServiceRequest />,
+      },
+      {
+        path: "/select-service/repairs/:serviceId",
+        element: <ServiceDetail />,
+        loader: async () => {
+          return fetch("/data/reparingList.json");
+        },
       },
       {
         path: "/login",

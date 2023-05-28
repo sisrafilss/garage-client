@@ -28,8 +28,8 @@ const Login = () => {
           <ButtonRegularGreen className="">Login</ButtonRegularGreen>
         </form>
         <BodyText className="text-center text-white">
-          Don't Have an Account?
-          <LinkedButton to="/register">Register Here</LinkedButton>
+          Don't Have an Account? 
+          <LinkedButton to="/register"> Register Here</LinkedButton>
         </BodyText>
       </FormContainer>
     </FormWrapper>

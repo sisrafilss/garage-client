@@ -1,19 +1,17 @@
-import React from "react";
-import { Collapse } from "react-collapse";
+import React from 'react';
 import {
-  IoIosArrowDropdownCircle,
-  IoIosArrowDroprightCircle,
-} from "react-icons/io";
-import BodyText from "../../Shared/ReusableComponents/BodyText";
-import Subtitle from "../../Shared/ReusableComponents/Subtitle";
-import HeadingH5 from "../../Shared/ReusableComponents/HeadingH5";
+    IoIosArrowDropdownCircle,
+    IoIosArrowDroprightCircle,
+  } from "react-icons/io";
+import HeadingH5 from '../../../Shared/ReusableComponents/HeadingH5';
+import { Collapse } from 'react-collapse';
+import BodyText from '../../../Shared/ReusableComponents/BodyText';
 
-const FAQ = ({ faqData, activeIndex, handleAccordion }) => {
-  return (
-    <>
-      <Subtitle className="mb-0 sm:text-left">frequently asked questions</Subtitle>
-      <div className="space-y-6">
-        {faqData.map((item, index) => (
+const FAQBody = ({faqData, activeIndex, handleAccordion,}) => {
+    console.log("from faq body:",faqData)
+    return (
+        <div className="space-y-6">
+        {faqData?.map((item, index) => (
           <div className="space-y-2" key={index}>
             <div
               className="flex space-x-2 cursor-pointer"
@@ -34,8 +32,7 @@ const FAQ = ({ faqData, activeIndex, handleAccordion }) => {
           </div>
         ))}
       </div>
-    </>
-  );
+    );
 };
 
-export default FAQ;
+export default FAQBody;

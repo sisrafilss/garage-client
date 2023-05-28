@@ -12,7 +12,7 @@ const ServiceCard = ({ className, cardData }) => {
       <img className="shrink-0 mx-auto object-cover" src={imgURL} alt="" />
       <h4 className="text-white font-semibold text-lg">{title}</h4>
       <BodyText className="text-white">{description}</BodyText>
-      <ButtonRegularGreen path={title}>View Detail</ButtonRegularGreen>
+      <ButtonRegularGreen path="repairs">View Detail</ButtonRegularGreen>
     </div>
   );
 };

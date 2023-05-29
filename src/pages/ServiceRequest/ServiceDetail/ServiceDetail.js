@@ -170,7 +170,7 @@ const ServiceDetail = ({ className }) => {
         </div>
       </div>
 
-      <TotalAtBottom totalPrice={totalPrice} />
+      <TotalAtBottom totalPrice={totalPrice} path="/checkout/schedule" />
     </SectionWrapper>
   );
 };

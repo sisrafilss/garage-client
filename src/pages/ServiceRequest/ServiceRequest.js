@@ -138,7 +138,7 @@ const ServiceRequest = () => {
         </BasketContainer>
       </ColsWrapper>
 
-      <TotalAtBottom totalPrice={totalPrice} />     
+      <TotalAtBottom totalPrice={totalPrice} path="/checkout/schedule" />     
     </SectionWrapper>
   );
 };

@@ -9,6 +9,7 @@ import Register from "../pages/Register/Register";
 import ServiceRequest from "../pages/ServiceRequest/ServiceRequest";
 import ServiceDetail from "../pages/ServiceRequest/ServiceDetail/ServiceDetail";
 import Schedule from "../pages/Schedule/Schedule";
+import ConfirmOrder from "../pages/ConfirmOrder/ConfirmOrder";
 
 export const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
       {
         path: "/checkout/schedule",
         element: <Schedule />
+      },
+      {
+        path: "/checkout/confirm-order",
+        element: <ConfirmOrder />
       },
       {
         path: "/login",

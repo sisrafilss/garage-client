@@ -48,7 +48,7 @@ const Schedule = () => {
             </div>
 
             <hr className="w-full" />
-            
+
             <div className="mx-5">
               <TimePicker />
             </div>
@@ -61,7 +61,7 @@ const Schedule = () => {
         </BasketContainer>
       </ColsWrapper>
 
-      <TotalAtBottom totalPrice={totalPrice} />
+      <TotalAtBottom totalPrice={totalPrice} path="/checkout/confirm-order" />
     </SectionWrapper>
   );
 };

@@ -3,12 +3,12 @@ import HeadingH3 from '../../Shared/ReusableComponents/HeadingH3';
 import ButtonRegularGreen from '../../Shared/Buttons/ButtonRegularGreen';
 import { useNavigate } from 'react-router-dom';
 
-const TotalAtBottom = ({totalPrice, className}) => {
+const TotalAtBottom = ({totalPrice, className, path}) => {
 
     const navigate = useNavigate();
 
     const handleNvigatge = () => {
-        navigate("/checkout/schedule");
+        navigate(path);
     }
 
     return (

@@ -7,8 +7,6 @@ const MyCalendar = () => {
 
     const [value, onChange] = useState(new Date());
 
-    console.log(value);
-
     return (
         <div>
       <Calendar onChange={onChange} value={value} />

@@ -9,6 +9,11 @@
     background-color: #E8F6EF
   }
 
+  .react-calendar__viewContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 .react-calendar__tile--active {
     background: #1B9C85;
 }

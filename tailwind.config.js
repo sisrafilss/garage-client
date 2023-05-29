@@ -23,7 +23,8 @@ module.exports = {
         'evergreen': '#1B9C85',
         'honeydew': '#FFE194',
         'light-gray': '#D9D9D9',
-        'turquoise': '#52E7CC'
+        'turquoise': '#52E7CC',
+        'slate': '#61617D'
       },
     },
   },

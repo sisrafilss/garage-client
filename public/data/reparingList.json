@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Brake discs and pads replacement (front) ",
+    "description": "Modern vehicles sometimes require sensors to be replaced alongside the brake pads. We will always contact you in advance should your vehicle require a new sensor.",
     "price": 259.49,
     "discountPrice": 219.49,
     "imgURL": "https://i.ibb.co/2SqR8wV/image-24.png",
@@ -47,6 +48,7 @@
   {
     "id": 2,
     "title": "Brake discs and pads replacement (front) 2",
+    "description": "Modern vehicles sometimes require sensors to be replaced alongside the brake pads. We will always contact you in advance should your vehicle require a new sensor.",
     "price": 259.49,
     "discountPrice": 219.49,
     "imgURL": "https://i.ibb.co/2SqR8wV/image-24.png",
@@ -93,6 +95,7 @@
     "id": 3,
     "title": "Brake discs and pads replacement (front) 3",
     "price": 259.49,
+    "description": "Modern vehicles sometimes require sensors to be replaced alongside the brake pads. We will always contact you in advance should your vehicle require a new sensor.",
     "discountPrice": 219.49,
     "imgURL": "https://i.ibb.co/2SqR8wV/image-24.png",
     "features": [
@@ -137,6 +140,7 @@
   {
     "id": 4,
     "title": "Brake discs and pads replacement (front)",
+    "description": "Modern vehicles sometimes require sensors to be replaced alongside the brake pads. We will always contact you in advance should your vehicle require a new sensor.",
     "price": 259.49,
     "discountPrice": 219.49,
     "imgURL": "https://i.ibb.co/2SqR8wV/image-24.png",

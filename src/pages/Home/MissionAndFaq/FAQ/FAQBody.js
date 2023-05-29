@@ -8,7 +8,6 @@ import { Collapse } from 'react-collapse';
 import BodyText from '../../../Shared/ReusableComponents/BodyText';
 
 const FAQBody = ({faqData, activeIndex, handleAccordion,}) => {
-    console.log("from faq body:",faqData)
     return (
         <div className="space-y-6">
         {faqData?.map((item, index) => (

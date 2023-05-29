@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SectionWrapper from "../Shared/ReusableComponents/SectionWrapper";
 import PageTopHeader from "../Shared/ReusableComponents/PageTopHeader";
 import FeatureList from "./FeatureList";
@@ -107,6 +107,16 @@ export const repairings = [
 ];
 
 const ServiceRequest = () => {
+
+  const [basketItems, setBasketItems] = useState([]);
+
+  useEffect(() => {
+    // Load the basket items from local storage when the component mounts
+    const storedData = localStorage.getItem('basketItems');
+    if (storedData) {
+      setBasketItems(JSON.parse(storedData));
+    }
+  }, []);
   return (
     <SectionWrapper className="mb-12">
       <PageTopHeader pageName="What does your car need?" />
@@ -115,7 +125,7 @@ const ServiceRequest = () => {
           <FeatureList className="h-full" repairings={repairings} />
         </FeatureContainer>
         <BasketContainer>
-          <Basket className="h-auto" />
+          <Basket basketItems={basketItems} className="h-auto" />
         </BasketContainer>
       </ColsWrapper>
     </SectionWrapper>

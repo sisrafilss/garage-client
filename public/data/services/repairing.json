@@ -1,0 +1,23 @@
+{
+    "category": "Repairing",
+    "repairingList": [
+      {
+        "id": 1,
+        "imgURL": "https://i.ibb.co/g4vXJ7x/service-card-img.png",
+        "title": "Service",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+      },
+      {
+        "id": 2,
+        "imgURL": "https://i.ibb.co/g4vXJ7x/service-card-img.png",
+        "title": "Diagnostics",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+      },
+      {
+        "id": 3,
+        "imgURL": "https://i.ibb.co/g4vXJ7x/service-card-img.png",
+        "title": "Repairs",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+      }
+    ]
+  }

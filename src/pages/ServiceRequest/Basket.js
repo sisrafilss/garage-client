@@ -1,10 +1,8 @@
 import React from "react";
 import HeadingH3 from "../Shared/ReusableComponents/HeadingH3";
 
-const Basket = ({ className, basketItems }) => {
-  const totalPrice = basketItems.reduce((accumulator, item) => {
-    return accumulator + parseFloat(item.price);
-  }, 0);
+const Basket = ({ className, basketItems, totalPrice }) => {
+  
 
   return (
     <div

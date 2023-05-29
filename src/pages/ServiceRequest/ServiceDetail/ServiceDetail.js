@@ -13,6 +13,8 @@ import ButtonRegularGreen from "../../Shared/Buttons/ButtonRegularGreen";
 import FAQBody from "../../Home/MissionAndFaq/FAQ/FAQBody";
 import ResponsiveCard from "../../Shared/ReusableComponents/ResponsiveCard";
 import FeatureCard from "./FeatureCard";
+import TotalAtBottom from "./TotalAtBottom";
+import OrderSteps from "./OrderSteps";
 
 const ServiceDetail = ({ className }) => {
   // State for handling Service FAQ
@@ -37,25 +39,38 @@ const ServiceDetail = ({ className }) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
+  // load basket data from local storage
   useEffect(() => {
     // Load the basket items from local storage when the component mounts
-    const storedData = localStorage.getItem('basketItems');
+    const storedData = localStorage.getItem("basketItems");
     if (storedData) {
       setBasketItems(JSON.parse(storedData));
     }
   }, []);
 
-// hanlde Add Item to Basket as well as save it to local storage
+  // hanlde Add Item to Basket as well as save it to local storage
   const handleAddItemToBasket = (item) => {
-    const {title, price} = item;
-    const newItem = {title, price};
+    const { title, price } = item;
+    const newItem = { title, price };
     setBasketItems([...basketItems, newItem]);
-    localStorage.setItem('basketItems', JSON.stringify([...basketItems, newItem]));
-  }
+    localStorage.setItem(
+      "basketItems",
+      JSON.stringify([...basketItems, newItem])
+    );
+  };
+
+  // Calculate Total price
+  const totalPrice = basketItems.reduce((accumulator, item) => {
+    return accumulator + parseFloat(item.price);
+  }, 0);
 
   return (
     <SectionWrapper className={`${className} mb-12`}>
       <PageTopHeader pageName="What does your Toyota Avensis need?" />
+
+      <div className="flex justify-center items-center">
+        <OrderSteps activeStep="1" />
+      </div>
 
       <ColsWrapper>
         <FeatureContainer className="border pb-6">
@@ -98,7 +113,10 @@ const ServiceDetail = ({ className }) => {
                 </div>
 
                 <div className="pt-4">
-                  <ButtonRegularGreen className="w-full font-semibold" onClick={() => handleAddItemToBasket(serviceData)}>
+                  <ButtonRegularGreen
+                    className="w-full font-semibold"
+                    onClick={() => handleAddItemToBasket(serviceData)}
+                  >
                     Add to Basket
                   </ButtonRegularGreen>
                 </div>
@@ -119,11 +137,15 @@ const ServiceDetail = ({ className }) => {
         </FeatureContainer>
 
         <BasketContainer>
-          <Basket basketItems={basketItems} className="h-auto" />
+          <Basket
+            basketItems={basketItems}
+            totalPrice={totalPrice}
+            className="h-auto"
+          />
         </BasketContainer>
       </ColsWrapper>
 
-      <div className="bg-slate w-full h-auto py-10">
+      <div className="bg-slate w-full h-auto py-10 z-0">
         <div className="container">
           <div className="flex justify-between items-center">
             <HeadingH3 className="text-white">
@@ -147,6 +169,8 @@ const ServiceDetail = ({ className }) => {
           </ResponsiveCard>
         </div>
       </div>
+
+      <TotalAtBottom totalPrice={totalPrice} />
     </SectionWrapper>
   );
 };

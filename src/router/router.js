@@ -8,6 +8,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ServiceRequest from "../pages/ServiceRequest/ServiceRequest";
 import ServiceDetail from "../pages/ServiceRequest/ServiceDetail/ServiceDetail";
+import Schedule from "../pages/Schedule/Schedule";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
         loader: async () => {
           return fetch("/data/reparingList.json");
         },
+      },
+      {
+        path: "/checkout/schedule",
+        element: <Schedule />
       },
       {
         path: "/login",

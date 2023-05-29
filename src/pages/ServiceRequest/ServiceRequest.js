@@ -6,6 +6,7 @@ import Basket from "./Basket";
 import ColsWrapper from "../../components/ResponsiveLayout/ColsWrapper";
 import FeatureContainer from "../../components/ResponsiveLayout/FeatureContainer";
 import BasketContainer from "../../components/ResponsiveLayout/BasketContainer";
+import TotalAtBottom from "./ServiceDetail/TotalAtBottom";
 
 export const repairings = [
   {
@@ -107,16 +108,20 @@ export const repairings = [
 ];
 
 const ServiceRequest = () => {
-
   const [basketItems, setBasketItems] = useState([]);
 
   useEffect(() => {
     // Load the basket items from local storage when the component mounts
-    const storedData = localStorage.getItem('basketItems');
+    const storedData = localStorage.getItem("basketItems");
     if (storedData) {
       setBasketItems(JSON.parse(storedData));
     }
   }, []);
+
+  // Calculate total price
+  const totalPrice = basketItems.reduce((accumulator, item) => {
+    return accumulator + parseFloat(item.price);
+  }, 0);
   return (
     <SectionWrapper className="mb-12">
       <PageTopHeader pageName="What does your car need?" />
@@ -125,9 +130,15 @@ const ServiceRequest = () => {
           <FeatureList className="h-full" repairings={repairings} />
         </FeatureContainer>
         <BasketContainer>
-          <Basket basketItems={basketItems} className="h-auto" />
+          <Basket
+            basketItems={basketItems}
+            totalPrice={totalPrice}
+            className="h-auto"
+          />
         </BasketContainer>
       </ColsWrapper>
+
+      <TotalAtBottom totalPrice={totalPrice} />     
     </SectionWrapper>
   );
 };

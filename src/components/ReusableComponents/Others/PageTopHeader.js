@@ -6,7 +6,7 @@ const PageTopHeader = ({ pageName }) => {
       className={`h-52 max-h-52 w-full relative bg-[url('https://i.ibb.co/nzF9TCK/image-16.png')]`}
     >
       <div className="bg-twilight h-52 max-h-52 w-full bg-opacity-90">
-        <HeadingH2 className="text-white absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <HeadingH2 className="text-white absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl container text-center">
           {pageName}
         </HeadingH2>
       </div>

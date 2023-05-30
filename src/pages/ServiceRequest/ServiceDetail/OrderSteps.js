@@ -4,7 +4,7 @@ const OrderSteps = ({ activeStep }) => {
       <Step
         stepName="Add Service"
         step="1"
-        className="-mr-1"
+        className="-mr-0"
         isActive={activeStep === "1" ? true : false}
       />
       <Separator />
@@ -37,7 +37,7 @@ const Step = ({ step, stepName, className, isActive }) => {
           isActive
             ? "bg-evergreen"
             : "bg-mintfrost border border-black border-opacity-10"
-        } w-[60px] h-[60px] rounded-full flex justify-center items-center `}
+        } w-[60px] h-[60px] rounded-full flex justify-center items-center sm:w-[60px] sm:h-[60px]`}
       >
         <div
           className={` font-semibold ${

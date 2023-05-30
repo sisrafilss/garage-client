@@ -12,6 +12,7 @@ const ServiceList = ({ services, showDetailBtn, className }) => {
             key={data.id}
             className="mx-auto md:mx-0"
             cardData={data}
+            path="/select-service/repairs"
           />
         ))}
       </ResponsiveCard>

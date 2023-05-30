@@ -41,7 +41,7 @@ const BestServices = ({ className, showDetailBtn = true }) => {
           minim veniam
         </BodyText>
       </div>
-      <ServiceList showDetailBtn={showDetailBtn} services={services} />
+      <ServiceList services={services} />
     </section>
   );
 };

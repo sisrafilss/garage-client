@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const MenuItem = ({ children, className, to }) => {
   return (
     <NavLink
-      className={`${className} font-medium hover:text-evergreen transition duration-300 ${({
+      className={`${className} text-lg font-medium hover:text-evergreen transition duration-300 ${({
         isActive,
       }) => (isActive ? "text-evergreen" : undefined)}`}
       to={to}

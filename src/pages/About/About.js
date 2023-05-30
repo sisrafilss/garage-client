@@ -1,8 +1,8 @@
-import React from "react";
-import PageTopHeader from "../Shared/ReusableComponents/PageTopHeader";
+import PageTopHeader from "../../components/ReusableComponents/Others/PageTopHeader";
+import SectionWrapper from "../../components/ReusableComponents/Others/SectionWrapper";
 import AboutSection from "../Home/AboutSection/AboutSection";
 import MissionAndFaq from "../Home/MissionAndFaq/MissionAndFaq";
-import SectionWrapper from "../Shared/ReusableComponents/SectionWrapper";
+
 
 const About = () => {
   return (

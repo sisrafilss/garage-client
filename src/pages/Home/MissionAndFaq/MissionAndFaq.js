@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import Mission from "./Mission";
 import FAQ from "./FAQ/FAQ";
-import axios from "axios";
 
 // const faqData = [
 //   {
@@ -35,7 +35,6 @@ const MissionAndFaq = ({ className }) => {
   const fetchFaqData = async () => {
     const response = await axios.get("/data/faqData.json");
     setFaqData(response.data);
-    
   };
 
   useEffect(() => {

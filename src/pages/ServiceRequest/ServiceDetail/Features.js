@@ -1,6 +1,5 @@
-import React from "react";
-import BodyText from "../../Shared/ReusableComponents/BodyText";
 import { GiCheckMark } from "react-icons/gi";
+import BodyText from "../../../components/ReusableComponents/Others/BodyText";
 
 const Features = ({ feature, className }) => {
   return (

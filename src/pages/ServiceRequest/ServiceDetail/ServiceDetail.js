@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from "react";
-import SectionWrapper from "../../Shared/ReusableComponents/SectionWrapper";
-import PageTopHeader from "../../Shared/ReusableComponents/PageTopHeader";
+import { useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
+import SectionWrapper from "../../../components/ReusableComponents/Others/SectionWrapper";
+import PageTopHeader from "../../../components/ReusableComponents/Others/PageTopHeader";
+import OrderSteps from "./OrderSteps";
 import ColsWrapper from "../../../components/ResponsiveLayout/ColsWrapper";
 import FeatureContainer from "../../../components/ResponsiveLayout/FeatureContainer";
 import ServiceNavigation from "./ServiceNavigation";
+import HeadingH3 from "../../../components/ReusableComponents/Headings/HeadingH3";
+import Features from "./Features";
+import ButtonRegularGreen from "../../../components/ReusableComponents/Buttons/ButtonRegularGreen";
+import FAQBody from '../../Home/MissionAndFaq/FAQ/FAQBody'
 import BasketContainer from "../../../components/ResponsiveLayout/BasketContainer";
 import Basket from "../Basket";
-import { useLoaderData, useParams } from "react-router-dom";
-import HeadingH3 from "../../Shared/ReusableComponents/HeadingH3";
-import Features from "./Features";
-import ButtonRegularGreen from "../../Shared/Buttons/ButtonRegularGreen";
-import FAQBody from "../../Home/MissionAndFaq/FAQ/FAQBody";
-import ResponsiveCard from "../../Shared/ReusableComponents/ResponsiveCard";
-import FeatureCard from "./FeatureCard";
 import TotalAtBottom from "./TotalAtBottom";
-import OrderSteps from "./OrderSteps";
+import ResponsiveCard from "../../../components/ReusableComponents/Others/ResponsiveCard";
+import FeatureCard from "./FeatureCard";
+
 
 const ServiceDetail = ({ className }) => {
   // State for handling Service FAQ

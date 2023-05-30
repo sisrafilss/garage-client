@@ -1,6 +1,6 @@
-import React from "react";
-import BodyText from "../../Shared/ReusableComponents/BodyText";
-import ButtonRegularGreen from "../../Shared/Buttons/ButtonRegularGreen";
+import ButtonRegularGreen from "../../../components/ReusableComponents/Buttons/ButtonRegularGreen";
+import BodyText from "../../../components/ReusableComponents/Others/BodyText";
+
 
 const FeatureCard = ({ className, cardData }) => {
   const { imgURL, title, description } = cardData;

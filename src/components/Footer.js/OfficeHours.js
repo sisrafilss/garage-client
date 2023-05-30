@@ -1,5 +1,4 @@
-import React from "react";
-import HeadingH5 from "../ReusableComponents/HeadingH5";
+import HeadingH5 from "../ReusableComponents/Headings/HeadingH5";
 
 const OfficeHours = () => {
   return (

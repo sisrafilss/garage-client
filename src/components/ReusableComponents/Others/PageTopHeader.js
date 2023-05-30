@@ -1,5 +1,4 @@
-import React from "react";
-import HeadingH2 from "./HeadingH2";
+import HeadingH2 from "../Headings/HeadingH2";
 
 const PageTopHeader = ({ pageName }) => {
   return (

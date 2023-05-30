@@ -1,5 +1,3 @@
-import React from "react";
-
 const InputField = ({ type, label, placeholder, className }) => {
   return (
     <div className={`space-y-1 ${className}`}>

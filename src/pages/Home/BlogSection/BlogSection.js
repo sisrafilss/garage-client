@@ -1,9 +1,9 @@
-import React from "react";
-import Subtitle from "../../Shared/ReusableComponents/Subtitle";
-import BodyText from "../../Shared/ReusableComponents/BodyText";
-import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
-import ResponsiveCard from "../../Shared/ReusableComponents/ResponsiveCard";
+import HeadingH2 from "../../../components/ReusableComponents/Headings/HeadingH2";
+import BodyText from "../../../components/ReusableComponents/Others/BodyText";
+import ResponsiveCard from "../../../components/ReusableComponents/Others/ResponsiveCard";
+import Subtitle from "../../../components/ReusableComponents/Others/Subtitle";
 import BlogCard from "./BlogCard";
+
 
 const blogData = [
   {

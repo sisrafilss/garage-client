@@ -1,9 +1,6 @@
-import React from "react";
-import HeadingH3 from "../Shared/ReusableComponents/HeadingH3";
+import HeadingH3 from "../../components/ReusableComponents/Headings/HeadingH3";
 
 const Basket = ({ className, basketItems, totalPrice }) => {
-  
-
   return (
     <div
       className={`${className} bg-white w-full rounded border shadow-lg   pb-6 `}
@@ -44,7 +41,7 @@ const Basket = ({ className, basketItems, totalPrice }) => {
         <div className="px-3 pt-2">
           {basketItems.map((item, idx) => (
             <div key={idx} className="pb-3 pt-3 px-2">
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center space-x-2">
                 <span className="text-base text-twilight">{item.title}</span>
                 <span className="text-[20px]  text-twilight">
                   ${item.price}

@@ -4,12 +4,14 @@ import Home from "../pages/Home/Home/Home";
 import About from "../pages/About/About";
 import Services from "../pages/Services/Services";
 import SelectService from "../pages/SelectService/SelectService";
-import Login from "../pages/Login/Login";
-import Register from "../pages/Register/Register";
 import ServiceRequest from "../pages/ServiceRequest/ServiceRequest";
 import ServiceDetail from "../pages/ServiceRequest/ServiceDetail/ServiceDetail";
 import Schedule from "../pages/Schedule/Schedule";
 import ConfirmOrder from "../pages/ConfirmOrder/ConfirmOrder";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
+
+
 
 export const router = createBrowserRouter([
   {

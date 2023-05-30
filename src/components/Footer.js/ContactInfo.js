@@ -1,6 +1,5 @@
-import React from "react";
-import HeadingH5 from "../ReusableComponents/HeadingH5";
-import BodyText from "../ReusableComponents/BodyText";
+import HeadingH5 from "../ReusableComponents/Headings/HeadingH5";
+import BodyText from "../ReusableComponents/Others/BodyText";
 
 const ContactInfo = () => {
   return (

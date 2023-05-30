@@ -1,6 +1,6 @@
-import React from "react";
-import Subtitle from "../../../Shared/ReusableComponents/Subtitle";
+import Subtitle from "../../../../components/ReusableComponents/Others/Subtitle";
 import FAQBody from "./FAQBody";
+
 
 const FAQ = ({ faqData, activeIndex, handleAccordion, title }) => {
   return (

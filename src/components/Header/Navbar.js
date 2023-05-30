@@ -1,6 +1,7 @@
 import React from "react";
 import MenuItem from "./MenuItem";
-import SmallGreenButton from "../ReusableComponents/SmallGreenButton";
+import ButtonSmallGreen from "../ReusableComponents/Buttons/ButtonSmallGreen";
+
 
 const Navbar = ({ showMobileMenu, openModal }) => {
   return (
@@ -13,7 +14,7 @@ const Navbar = ({ showMobileMenu, openModal }) => {
       <MenuItem to="/about">About</MenuItem>
       <MenuItem to="/services">Services</MenuItem>
       <MenuItem to="/login">Login</MenuItem>
-      <SmallGreenButton onClick={openModal}>Get a Quote</SmallGreenButton>
+      <ButtonSmallGreen onClick={openModal}>Get a Quote</ButtonSmallGreen>
     </div>
   );
 };

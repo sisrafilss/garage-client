@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const availabeTimes = [
   "9:30 AM - 11:00 AM",

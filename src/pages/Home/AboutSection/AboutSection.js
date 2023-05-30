@@ -1,18 +1,18 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import Subtitle from "../../../components/ReusableComponents/Others/Subtitle";
+import HeadingH2 from "../../../components/ReusableComponents/Headings/HeadingH2";
+import BodyText from "../../../components/ReusableComponents/Others/BodyText";
+import AttentionBox from "./AttentionBox";
+import ButtonLargeGreen from "../../../components/ReusableComponents/Buttons/ButtonLargeGreen";
+
 import img1 from "../../../media/img/car-reparing-1.jpg";
 import img2 from "../../../media/img/car-reparing-2.jpg";
 import img3 from "../../../media/img/car-reparing-3.jpg";
 import img4 from "../../../media/img/car-reparing-4.jpg";
-import Subtitle from "../../Shared/ReusableComponents/Subtitle";
-import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
-import BodyText from "../../Shared/ReusableComponents/BodyText";
-import AttentionBox from "./AttentionBox";
-import LargeGreenButton from "../../Shared/ReusableComponents/LargeGreenButton";
-import { Link } from "react-router-dom";
 
 const images = [img1, img2, img3, img4];
 
-const AboutSection = ({className, showBtn = true }) => {
+const AboutSection = ({ className, showBtn = true }) => {
   return (
     <section className={`container sm:flex sm:space-x-8 ${className}`}>
       <div className="hidden sm:w-1/2 sm:grid  sm:grid-cols-2 md:grid-cols-2  gap-4 md:p-4">
@@ -44,9 +44,9 @@ const AboutSection = ({className, showBtn = true }) => {
         </div>
         {showBtn ? (
           <div className="flex justify-center pt-2 sm:justify-start">
-            <LargeGreenButton>
+            <ButtonLargeGreen>
               <Link to="/about">About More</Link>
-            </LargeGreenButton>
+            </ButtonLargeGreen>
           </div>
         ) : (
           ""

@@ -1,5 +1,3 @@
-import React from "react";
-
 const SectionWrapper = ({ children, className }) => {
   return (
     <div

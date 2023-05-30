@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeadingH2 = ({ children, className }) => {
   return (
     <h2

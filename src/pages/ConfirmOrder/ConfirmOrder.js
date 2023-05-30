@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from "react";
-import SectionWrapper from "../Shared/ReusableComponents/SectionWrapper";
-import PageTopHeader from "../Shared/ReusableComponents/PageTopHeader";
+import { useEffect, useState } from "react";
+import SectionWrapper from "../../components/ReusableComponents/Others/SectionWrapper";
+import PageTopHeader from "../../components/ReusableComponents/Others/PageTopHeader";
 import OrderSteps from "../ServiceRequest/ServiceDetail/OrderSteps";
 import ColsWrapper from "../../components/ResponsiveLayout/ColsWrapper";
 import FeatureContainer from "../../components/ResponsiveLayout/FeatureContainer";
-import BasketContainer from "../../components/ResponsiveLayout/BasketContainer";
-import Basket from "../ServiceRequest/Basket";
-import HeadingH3 from "../Shared/ReusableComponents/HeadingH3";
-import BodyText from "../Shared/ReusableComponents/BodyText";
+import HeadingH3 from "../../components/ReusableComponents/Headings/HeadingH3";
+import BodyText from "../../components/ReusableComponents/Others/BodyText";
 import LinkedButton from "../Login/LinkedButton";
 import Input from "./Input";
-import ButtonRegularGreen from "../Shared/Buttons/ButtonRegularGreen";
-import ButtonRegularTwilight from "../Shared/ReusableComponents/ButtonRegularTwilight";
+import ButtonRegularTwilight from "../../components/ReusableComponents/Buttons/ButtonRegularTwilight";
+import ButtonRegularGreen from "../../components/ReusableComponents/Buttons/ButtonRegularGreen";
+import BasketContainer from "../../components/ResponsiveLayout/BasketContainer";
+import Basket from "../ServiceRequest/Basket";
 import TotalAtBottom from "../ServiceRequest/ServiceDetail/TotalAtBottom";
+
 
 const ConfirmOrder = () => {
   // State for basket

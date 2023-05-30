@@ -1,11 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { BiSearch } from "react-icons/bi";
 import { TbMathGreater } from "react-icons/tb";
-import BodyText from "../Shared/ReusableComponents/BodyText";
-import HeadingH3 from "../Shared/ReusableComponents/HeadingH3";
-import HeadingH5 from "../Shared/ReusableComponents/HeadingH5";
 import ServiceNavigation from "./ServiceDetail/ServiceNavigation";
+import HeadingH3 from "../../components/ReusableComponents/Headings/HeadingH3";
+import HeadingH5 from "../../components/ReusableComponents/Headings/HeadingH5";
+import BodyText from "../../components/ReusableComponents/Others/BodyText";
 
 const FeatureList = ({ className, repairings }) => {
   return (

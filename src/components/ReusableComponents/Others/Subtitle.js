@@ -1,5 +1,3 @@
-import React from "react";
-
 const Subtitle = ({ children, className }) => {
   return (
     <h4

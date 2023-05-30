@@ -1,7 +1,8 @@
-import React from 'react';
-import Logo from '../ReusableComponents/Logo';
-import BodyText from '../ReusableComponents/BodyText';
-import SocialMedia from './SocialMedia';
+
+import Logo from "../ReusableComponents/Others/Logo";
+import BodyText from "../ReusableComponents/Others/BodyText";
+import SocialMedia from "./SocialMedia";
+
 
 const AboutGarage = () => {
     return (

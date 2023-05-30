@@ -1,6 +1,6 @@
-import React from 'react';
-import Subtitle from '../../Shared/ReusableComponents/Subtitle';
-import BodyText from '../../Shared/ReusableComponents/BodyText';
+import BodyText from "../../../components/ReusableComponents/Others/BodyText";
+import Subtitle from "../../../components/ReusableComponents/Others/Subtitle";
+
 
 const Mission = () => {
     return (

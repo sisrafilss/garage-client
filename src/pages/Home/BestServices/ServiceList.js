@@ -1,7 +1,6 @@
-import React from "react";
+import ButtonFullOutline from "../../../components/ReusableComponents/Buttons/ButtonFullOutline";
+import ResponsiveCard from "../../../components/ReusableComponents/Others/ResponsiveCard";
 import ServiceCard from "./ServiceCard";
-import ButtonFullOutline from "../../Shared/Buttons/ButtonFullOutline";
-import ResponsiveCard from "../../Shared/ReusableComponents/ResponsiveCard";
 
 const ServiceList = ({ services, showDetailBtn, className }) => {
   return (

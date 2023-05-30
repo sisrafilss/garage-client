@@ -1,10 +1,9 @@
-import React from "react";
-import InputField from "../Shared/ReusableComponents/InputField";
-import ButtonRegularGreen from "../Shared/Buttons/ButtonRegularGreen";
-import HeadingH1 from "../Shared/ReusableComponents/HeadingH1";
-import BodyText from "../Shared/ReusableComponents/BodyText";
-import FormWrapper from "./FormWrapper";
+import ButtonRegularGreen from "../../components/ReusableComponents/Buttons/ButtonRegularGreen";
+import HeadingH1 from "../../components/ReusableComponents/Headings/HeadingH1";
+import BodyText from "../../components/ReusableComponents/Others/BodyText";
+import InputField from "../../components/ReusableComponents/Others/InputField";
 import FormContainer from "./FormContainer";
+import FormWrapper from "./FormWrapper";
 import LinkedButton from "./LinkedButton";
 
 const Login = () => {
@@ -28,7 +27,7 @@ const Login = () => {
           <ButtonRegularGreen className="">Login</ButtonRegularGreen>
         </form>
         <BodyText className="text-center text-white">
-          Don't Have an Account? 
+          Don't Have an Account?
           <LinkedButton to="/register"> Register Here</LinkedButton>
         </BodyText>
       </FormContainer>

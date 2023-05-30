@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Navbar from "./Navbar";
-import Logo from "../ReusableComponents/Logo";
-import QuoteModal from "../../../components/QuoteModal/QuoteModal";
+import Logo from "../ReusableComponents/Others/Logo";
+import QuoteModal from "../QuoteModal/QuoteModal";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);

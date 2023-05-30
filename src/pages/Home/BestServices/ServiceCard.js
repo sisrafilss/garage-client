@@ -1,7 +1,5 @@
-import React from "react";
-// import img from "../../../media/img/Services/service-card-img.png";
-import BodyText from "../../Shared/ReusableComponents/BodyText";
-import ButtonRegularGreen from "../../Shared/Buttons/ButtonRegularGreen";
+import BodyText from "../../../components/ReusableComponents/Others/BodyText";
+import ButtonRegularGreen from "../../../components/ReusableComponents/Buttons/ButtonRegularGreen";
 
 const ServiceCard = ({ className, cardData, path }) => {
   const { imgURL, title, description } = cardData;

@@ -1,5 +1,4 @@
-import React from "react";
-import BodyText from "../../Shared/ReusableComponents/BodyText";
+import BodyText from "../../../components/ReusableComponents/Others/BodyText";
 
 const TestimonialCard = ({ data }) => {
   const { imgURL, name, description } = data;

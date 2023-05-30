@@ -1,5 +1,4 @@
-import React from "react";
-import BodyText from "../ReusableComponents/BodyText";
+import BodyText from "../ReusableComponents/Others/BodyText";
 
 const CopyRight = () => {
   return (

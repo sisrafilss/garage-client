@@ -1,7 +1,7 @@
-import React from "react";
-import PageTopHeader from "../Shared/ReusableComponents/PageTopHeader";
-import SectionWrapper from "../Shared/ReusableComponents/SectionWrapper";
+import PageTopHeader from "../../components/ReusableComponents/Others/PageTopHeader";
+import SectionWrapper from "../../components/ReusableComponents/Others/SectionWrapper";
 import ServiceList from "../Home/BestServices/ServiceList";
+
 const services = [
   {
     id: 1,

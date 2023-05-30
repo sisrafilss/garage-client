@@ -1,7 +1,6 @@
-import React from "react";
-import Subtitle from "../../Shared/ReusableComponents/Subtitle";
-import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
-import BodyText from "../../Shared/ReusableComponents/BodyText";
+import Subtitle from "../../../components/ReusableComponents/Others/Subtitle";
+import HeadingH2 from "../../../components/ReusableComponents/Headings/HeadingH2";
+import BodyText from "../../../components/ReusableComponents/Others/BodyText";
 import ServiceList from "./ServiceList";
 
 const services = [
@@ -26,7 +25,6 @@ const services = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
   },
- 
 ];
 
 const BestServices = ({ className, showDetailBtn = true }) => {

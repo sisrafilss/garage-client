@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import SectionWrapper from "../../components/ReusableComponents/Others/SectionWrapper";
+import PageTopHeader from "../../components/ReusableComponents/Others/PageTopHeader";
 import OrderSteps from "../ServiceRequest/ServiceDetail/OrderSteps";
-import SectionWrapper from "../Shared/ReusableComponents/SectionWrapper";
-import PageTopHeader from "../Shared/ReusableComponents/PageTopHeader";
 import ColsWrapper from "../../components/ResponsiveLayout/ColsWrapper";
 import FeatureContainer from "../../components/ResponsiveLayout/FeatureContainer";
+import MyCalendar from "./MyCalendar";
+import TimePicker from "./TimePicker";
 import BasketContainer from "../../components/ResponsiveLayout/BasketContainer";
 import Basket from "../ServiceRequest/Basket";
 import TotalAtBottom from "../ServiceRequest/ServiceDetail/TotalAtBottom";
-import MyCalendar from "./MyCalendar";
-import TimePicker from "./TimePicker";
+
 
 const Schedule = () => {
   // State for basket

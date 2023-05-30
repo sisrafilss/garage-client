@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
-import SectionWrapper from "../Shared/ReusableComponents/SectionWrapper";
-import PageTopHeader from "../Shared/ReusableComponents/PageTopHeader";
-import FeatureList from "./FeatureList";
-import Basket from "./Basket";
+import { useEffect, useState } from "react";
+import SectionWrapper from "../../components/ReusableComponents/Others/SectionWrapper";
+import PageTopHeader from "../../components/ReusableComponents/Others/PageTopHeader";
 import ColsWrapper from "../../components/ResponsiveLayout/ColsWrapper";
 import FeatureContainer from "../../components/ResponsiveLayout/FeatureContainer";
+import FeatureList from "./FeatureList";
 import BasketContainer from "../../components/ResponsiveLayout/BasketContainer";
+import Basket from "./Basket";
 import TotalAtBottom from "./ServiceDetail/TotalAtBottom";
+
 
 export const repairings = [
   {

@@ -1,6 +1,6 @@
-import React from "react";
-import HeadingH5 from "../../Shared/ReusableComponents/HeadingH5";
-import BodyText from "../../Shared/ReusableComponents/BodyText";
+import HeadingH5 from "../../../components/ReusableComponents/Headings/HeadingH5";
+import BodyText from "../../../components/ReusableComponents/Others/BodyText";
+
 
 const BlogCard = ({ blog }) => {
   const { title, description, imgURL } = blog;

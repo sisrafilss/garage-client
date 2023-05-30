@@ -1,7 +1,7 @@
-import React from "react";
-import Subtitle from "../../Shared/ReusableComponents/Subtitle";
-import HeadingH2 from "../../Shared/ReusableComponents/HeadingH2";
+import HeadingH2 from "../../../components/ReusableComponents/Headings/HeadingH2";
+import Subtitle from "../../../components/ReusableComponents/Others/Subtitle";
 import TestimonialCard from "./TestimonialCard";
+
 
 const testimonials = [
   {

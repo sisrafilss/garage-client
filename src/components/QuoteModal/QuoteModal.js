@@ -3,7 +3,6 @@ import ModalContainer from '../../pages/Shared/Modal/ModalContainer';
 import HeadingH3 from '../../pages/Shared/ReusableComponents/HeadingH3';
 import BodyText from '../../pages/Shared/ReusableComponents/BodyText';
 import ButtonRegularGreen from '../../pages/Shared/Buttons/ButtonRegularGreen';
-import { Link } from 'react-router-dom';
 
 const QuoteModal = ({openModal, closeModal, isOpen}) => {
     return (
@@ -24,8 +23,8 @@ const QuoteModal = ({openModal, closeModal, isOpen}) => {
           type="text"
           placeholder="Enter your Car Name and Model"
         />
-        <ButtonRegularGreen onClick={closeModal}>
-          <Link to="/select-service">Get an Instant Quote</Link>
+        <ButtonRegularGreen onClick={closeModal} path="/select-service">
+          Get an Instant Quote
         </ButtonRegularGreen>
       </ModalContainer>
     );

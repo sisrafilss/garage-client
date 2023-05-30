@@ -14,7 +14,6 @@ const Header = () => {
 
   const openModal = () => {
     setIsOpen(true);
-    console.log("Click on Open Modal");
   };
 
   const closeModal = () => {

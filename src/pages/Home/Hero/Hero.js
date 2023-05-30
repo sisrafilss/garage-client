@@ -11,7 +11,6 @@ const Hero = ({className}) => {
 
   const openModal = () => {
     setIsOpen(true);
-    console.log("Click on Open Modal");
   };
 
   const closeModal = () => {

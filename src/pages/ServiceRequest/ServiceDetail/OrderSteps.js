@@ -3,11 +3,11 @@ import React from "react";
 const OrderSteps = ({activeStep}) => {
   return (
     <div className="container flex justify-around">
-      <Step stepName="Add Service" step="1" className="-mr-6" isActive={activeStep === "1" ? true : false} />
+      <Step stepName="Add Service" step="1" className="-mr-1" isActive={activeStep === "1" ? true : false} />
       <Separator />
-      <Step stepName="Date and Time" step="2" className="-mx-6" isActive={activeStep === "2" ? true : false} />
+      <Step stepName="Date &amp; Time" step="2" className="-mx-0" isActive={activeStep === "2" ? true : false} />
       <Separator />
-      <Step stepName="Confirm Details" step="3" className="-ml-6" isActive={activeStep === "3" ? true : false} />
+      <Step stepName="Confirm Details" step="3" className="-ml-1" isActive={activeStep === "3" ? true : false} />
     </div>
   );
 };
@@ -34,10 +34,8 @@ const Step = ({ step, stepName, className, isActive }) => {
           {step}
         </div>
       </div>
-      <div className={`${isActive ? "text-evergreen" : "text-twilight"} text-lg  font-semibold flex`}>
-        {stepName && stepName.split(" ").map((word) => (
-          <span>{word}&nbsp;</span>
-        ))}
+      <div className={`${isActive ? "text-evergreen" : "text-twilight"} text-lg  font-semibold text-center leading-tight`}>
+        {stepName}
       </div>
     </div>
   );

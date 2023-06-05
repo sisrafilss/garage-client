@@ -9,8 +9,8 @@ const TopBar = () => {
   const { name, imgURL } = userInfo;
 
   return (
-    <div className="ml-[245px] w-100 bg-mintfrost py-4 pl-3 pr-8 shadow-sm z-10">
-      <div className=" flex justify-between ">
+    <div className="fixed ml-[245px] w-[100%] bg-mintfrost py-4 pl-3 pr-[273px] shadow-sm z-10">
+      <div className="flex justify-between ">
         <div>
           <AiOutlineNodeCollapse className="text-2xl cursor-pointer hover:text-evergreen" />
         </div>

@@ -12,6 +12,11 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import LayoutAdminDashboard from "../Layout/LayoutAdminDashboard";
 import AdminDashboard from "../pages/AdminDashboard/AdminDashboard/AdminDashboard";
+import Service from "../pages/AdminDashboard/Service/Service/Service";
+import Diagnostics from "../pages/AdminDashboard/Diagnostics/Diagnostics/Diagnostics";
+import Repair from "../pages/AdminDashboard/Repair/Repair/Repair";
+import Blog from "../pages/AdminDashboard/Blog/Blog/Blog";
+import Testimonial from "../pages/AdminDashboard/Testimonial/Testimonial/Testimonial";
 
 export const router = createBrowserRouter([
   {
@@ -19,23 +24,23 @@ export const router = createBrowserRouter([
     element: <Main />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/home",
+        path: "home",
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
       },
       {
-        path: "/services",
+        path: "services",
         element: <Services />,
       },
       {
-        path: "/select-service",
+        path: "select-service",
         element: <SelectService />,
       },
       {
@@ -58,25 +63,45 @@ export const router = createBrowserRouter([
         element: <ConfirmOrder />,
       },
       {
-        path: "/login",
+        path: "login",
         element: <Login />,
       },
       {
-        path: "/register",
+        path: "register",
         element: <Register />,
       },
     ],
   },
   {
-    path: "/dashboard",
+    path: "dashboard",
     element: <LayoutAdminDashboard />,
     children: [
       {
-        path: "/dashboard",
+        path: "",
         element: <AdminDashboard />,
         loader: async () => {
-          return fetch('/data/adminDashboard/summary.json')
-        }
+          return fetch("/data/adminDashboard/summary.json");
+        },
+      },
+      {
+        path: "service",
+        element: <Service />,
+      },
+      {
+        path: "diagnostics",
+        element: <Diagnostics />,
+      },
+      {
+        path: "repair",
+        element: <Repair />,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
+      },
+      {
+        path: "testimonial",
+        element: <Testimonial />,
       },
     ],
   },

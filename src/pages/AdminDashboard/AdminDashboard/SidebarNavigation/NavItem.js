@@ -25,6 +25,7 @@ const NavItem = ({ className, path, children }) => {
     <NavLink
       to={path}
       className={`${className} flex space-x-2 items-center hover:text-evergreen`}
+      end
     >
       {Icon && <Icon className="text-xl " />}
       <span className="text-lg font-medium duration-300">{children}</span>

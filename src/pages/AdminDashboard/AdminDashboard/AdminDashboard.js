@@ -4,7 +4,7 @@ import SummaryTable from "./SummaryTable/SummaryTable";
 
 const AdminDashboard = () => {
   const summaryData = useLoaderData();
-  const { cardData } = summaryData;
+  const { cardData, tableData } = summaryData;
   return (
     <div className="ml-60">
       <div className="px-6 pt-6 w-full space-y-12">
@@ -14,7 +14,7 @@ const AdminDashboard = () => {
           ))}
         </div>
         <div>
-          <SummaryTable />
+          <SummaryTable tableData={tableData} />
         </div>
       </div>
     </div>

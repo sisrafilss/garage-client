@@ -1,71 +1,100 @@
 {
-    "cardData": [
-      {
-        "title": "Servicing",
-        "properties": [
-          {
-            "title": "Total Requests",
-            "value": 221
-          },
-          {
-            "title": "Pending",
-            "value": 100
-          },
-          {
-            "title": "In-Progress",
-            "value": 50
-          },
-          {
-            "title": "Completed",
-            "value": 71
-          }
-        ],
-        "bg": "bg-twilight"
-      },
-      {
-        "title": "Diagnostics",
-        "properties": [
-          {
-            "title": "Total Requests",
-            "value": 221
-          },
-          {
-            "title": "Pending",
-            "value": 100
-          },
-          {
-            "title": "In-Progress",
-            "value": 50
-          },
-          {
-            "title": "Completed",
-            "value": 71
-          }
-        ],
-        "bg": "bg-evergreen"
-      },
-      {
-        "title": "Repairing",
-        "properties": [
-          {
-            "title": "Total Requests",
-            "value": 221
-          },
-          {
-            "title": "Pending",
-            "value": 100
-          },
-          {
-            "title": "In-Progress",
-            "value": 50
-          },
-          {
-            "title": "Completed",
-            "value": 71
-          }
-        ],
-        "bg": "bg-slate"
-      }
-    ],
-    "tableData": []
-  }
+  "cardData": [
+    {
+      "title": "Servicing",
+      "properties": [
+        {
+          "title": "Total Requests",
+          "value": 221
+        },
+        {
+          "title": "Pending",
+          "value": 100
+        },
+        {
+          "title": "In-Progress",
+          "value": 50
+        },
+        {
+          "title": "Completed",
+          "value": 71
+        }
+      ],
+      "bg": "bg-twilight"
+    },
+    {
+      "title": "Diagnostics",
+      "properties": [
+        {
+          "title": "Total Requests",
+          "value": 221
+        },
+        {
+          "title": "Pending",
+          "value": 100
+        },
+        {
+          "title": "In-Progress",
+          "value": 50
+        },
+        {
+          "title": "Completed",
+          "value": 71
+        }
+      ],
+      "bg": "bg-evergreen"
+    },
+    {
+      "title": "Repairing",
+      "properties": [
+        {
+          "title": "Total Requests",
+          "value": 221
+        },
+        {
+          "title": "Pending",
+          "value": 100
+        },
+        {
+          "title": "In-Progress",
+          "value": 50
+        },
+        {
+          "title": "Completed",
+          "value": 71
+        }
+      ],
+      "bg": "bg-slate"
+    }
+  ],
+  "tableData": [
+    {
+      "title": "Total Visitors",
+      "value": 772100
+    },
+    {
+      "title": "Total Sale",
+      "value": 103723
+    },
+    {
+      "title": "Total Requests",
+      "value": 10854
+    },
+    {
+      "title": "Completed Requests",
+      "value": 7229
+    },
+    {
+      "title": "Pending Requests",
+      "value": 2688
+    },
+    {
+      "title": "Rejected by Admin",
+      "value": 396
+    },
+    {
+      "title": "Cancelled by User",
+      "value": 1089
+    }
+  ]
+}

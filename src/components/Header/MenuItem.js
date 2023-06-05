@@ -8,6 +8,7 @@ const MenuItem = ({ children, className, to }) => {
         isActive,
       }) => (isActive ? "text-evergreen" : undefined)}`}
       to={to}
+      end
     >
       {children}
     </NavLink>

@@ -9,12 +9,12 @@ const SidebarNavigation = () => {
         <Logo />
         <div>
           <div className="flex flex-col space-y-8">
-            <NavItem>Dashboard</NavItem>
-            <NavItem>Service</NavItem>
-            <NavItem>Diagnosctics</NavItem>
-            <NavItem>Repair</NavItem>
-            <NavItem>Blog</NavItem>
-            <NavItem>Testimonials</NavItem>
+            <NavItem path="">Dashboard</NavItem>
+            <NavItem path="service">Service</NavItem>
+            <NavItem path="diagnostics">Diagnosctics</NavItem>
+            <NavItem path="repair">Repair</NavItem>
+            <NavItem path="blog">Blog</NavItem>
+            <NavItem path="testimonial">Testimonials</NavItem>
           </div>
         </div>
       </div>

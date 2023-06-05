@@ -10,8 +10,8 @@ import Schedule from "../pages/Schedule/Schedule";
 import ConfirmOrder from "../pages/ConfirmOrder/ConfirmOrder";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
-
-
+import LayoutAdminDashboard from "../Layout/LayoutAdminDashboard";
+import AdminDashboard from "../pages/AdminDashboard/AdminDashboard/AdminDashboard";
 
 export const router = createBrowserRouter([
   {
@@ -51,11 +51,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/checkout/schedule",
-        element: <Schedule />
+        element: <Schedule />,
       },
       {
         path: "/checkout/confirm-order",
-        element: <ConfirmOrder />
+        element: <ConfirmOrder />,
       },
       {
         path: "/login",
@@ -64,6 +64,16 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: <LayoutAdminDashboard />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <AdminDashboard />,
       },
     ],
   },

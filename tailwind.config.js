@@ -24,7 +24,8 @@ module.exports = {
         'honeydew': '#FFE194',
         'light-gray': '#D9D9D9',
         'turquoise': '#52E7CC',
-        'slate': '#61617D'
+        'slate': '#61617D',
+        'white-smoke': '#F0F0F0'
       },
     },
   },

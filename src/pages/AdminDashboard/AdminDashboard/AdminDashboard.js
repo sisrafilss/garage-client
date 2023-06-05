@@ -1,23 +1,22 @@
 import { useLoaderData } from "react-router-dom";
 import Card from "./Card/Card";
 import SummaryTable from "./SummaryTable/SummaryTable";
+import AdminDashboardPageContainer from "../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
 
 const AdminDashboard = () => {
   const summaryData = useLoaderData();
   const { cardData, tableData } = summaryData;
   return (
-    <div className="ml-60">
-      <div className="px-6 pt-6 w-full space-y-12">
-        <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-4 sm:grid-cols-1 sm:gap-4">
-          {cardData.map((card, idx) => (
-            <Card key={idx} className={card.bg} data={card} />
-          ))}
-        </div>
-        <div>
-          <SummaryTable tableData={tableData} />
-        </div>
+    <AdminDashboardPageContainer className="space-y-12">
+      <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-4 sm:grid-cols-1 sm:gap-4">
+        {cardData.map((card, idx) => (
+          <Card key={idx} className={card.bg} data={card} />
+        ))}
       </div>
-    </div>
+      <div>
+        <SummaryTable tableData={tableData} />
+      </div>
+    </AdminDashboardPageContainer>
   );
 };
 

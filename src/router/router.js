@@ -74,6 +74,9 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <AdminDashboard />,
+        loader: async () => {
+          return fetch('/data/adminDashboard/summary.json')
+        }
       },
     ],
   },

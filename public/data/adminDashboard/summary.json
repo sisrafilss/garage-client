@@ -1,0 +1,71 @@
+{
+    "cardData": [
+      {
+        "title": "Servicing",
+        "properties": [
+          {
+            "title": "Total Requests",
+            "value": 221
+          },
+          {
+            "title": "Pending",
+            "value": 100
+          },
+          {
+            "title": "In-Progress",
+            "value": 50
+          },
+          {
+            "title": "Completed",
+            "value": 71
+          }
+        ],
+        "bg": "bg-twilight"
+      },
+      {
+        "title": "Diagnostics",
+        "properties": [
+          {
+            "title": "Total Requests",
+            "value": 221
+          },
+          {
+            "title": "Pending",
+            "value": 100
+          },
+          {
+            "title": "In-Progress",
+            "value": 50
+          },
+          {
+            "title": "Completed",
+            "value": 71
+          }
+        ],
+        "bg": "bg-evergreen"
+      },
+      {
+        "title": "Repairing",
+        "properties": [
+          {
+            "title": "Total Requests",
+            "value": 221
+          },
+          {
+            "title": "Pending",
+            "value": 100
+          },
+          {
+            "title": "In-Progress",
+            "value": 50
+          },
+          {
+            "title": "Completed",
+            "value": 71
+          }
+        ],
+        "bg": "bg-slate"
+      }
+    ],
+    "tableData": []
+  }

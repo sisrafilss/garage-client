@@ -45,8 +45,8 @@ const ServiceList = () => {
                   ))}
                   <Td>
                     <span className="flex space-x-6 justify-center">
-                      <AiFillEdit className="text-2xl cursor-pointer text-evergreen" />
-                      <AiFillDelete className="text-2xl cursor-pointer text-red-600" />
+                      <AiFillEdit title="Edit" className="text-2xl cursor-pointer text-evergreen" />
+                      <AiFillDelete title="Delete" className="text-2xl cursor-pointer text-red-600" />
                     </span>
                   </Td>
                 </Tr>

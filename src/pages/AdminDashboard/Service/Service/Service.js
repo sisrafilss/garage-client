@@ -3,7 +3,7 @@ import NavServiceToggle from "./NavServiceToggle";
 
 const Service = () => {
   return (
-    <AdminDashboardPageContainer className="h-screen">
+    <AdminDashboardPageContainer>
       <NavServiceToggle />
     </AdminDashboardPageContainer>
   );

@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const NavServiceToggle = () => {
   return (
-   <div className="flex justify-center">
+   <div className="flex justify-center z-10">
      <div className="fixed flex justify-between rounded shadow-sm bg-white py-4 px-8 space-x-6">
-      <NavLink to="service-list" end>Service List</NavLink>
+      <NavLink to="" end>Service List</NavLink>
       <Separator />
       <NavLink to="pending" end>Pending</NavLink>
       <Separator />

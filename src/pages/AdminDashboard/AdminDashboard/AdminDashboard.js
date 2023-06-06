@@ -7,7 +7,7 @@ const AdminDashboard = () => {
   const summaryData = useLoaderData();
   const { cardData, tableData } = summaryData;
   return (
-    <AdminDashboardPageContainer className="space-y-12">
+    <AdminDashboardPageContainer className="space-y-12 pt-4">
       <div className="grid lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-4 sm:grid-cols-1 sm:gap-4">
         {cardData.map((card, idx) => (
           <Card key={idx} className={card.bg} data={card} />

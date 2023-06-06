@@ -12,11 +12,15 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import LayoutAdminDashboard from "../Layout/LayoutAdminDashboard";
 import AdminDashboard from "../pages/AdminDashboard/AdminDashboard/AdminDashboard";
-import Service from "../pages/AdminDashboard/Service/Service/Service";
 import Diagnostics from "../pages/AdminDashboard/Diagnostics/Diagnostics/Diagnostics";
 import Repair from "../pages/AdminDashboard/Repair/Repair/Repair";
 import Blog from "../pages/AdminDashboard/Blog/Blog/Blog";
 import Testimonial from "../pages/AdminDashboard/Testimonial/Testimonial/Testimonial";
+import ServiceList from "../pages/AdminDashboard/Service/ServiceList/ServiceList";
+import LayoutAdminDashboardService from "../Layout/LayoutAdminDashboardService";
+import ServicePending from "../pages/AdminDashboard/Service/ServicePending/ServicePending";
+import ServiceInProgress from "../pages/AdminDashboard/Service/ServiceInProgress/ServiceInProgress";
+import ServiceCompleted from "../pages/AdminDashboard/Service/ServiceCompleted/ServiceCompleted";
 
 export const router = createBrowserRouter([
   {
@@ -85,7 +89,28 @@ export const router = createBrowserRouter([
       },
       {
         path: "service",
-        element: <Service />,
+        element: <LayoutAdminDashboardService />,
+        children: [
+          {
+            path: "",
+            element: <ServiceList />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/service/serviceList.json");
+            },
+          },
+          {
+            path: "pending",
+            element: <ServicePending />,
+          },
+          {
+            path: "in-progress",
+            element: <ServiceInProgress />,
+          },
+          {
+            path: "completed",
+            element: <ServiceCompleted />,
+          },
+        ],
       },
       {
         path: "diagnostics",

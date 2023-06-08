@@ -47,7 +47,7 @@ const DiagnosticsList = () => {
         <TableContainer>
           <div className="flex justify-center">
             <ButtonAddHoneydew onClick={openAddModal}>
-              Add New Service
+              Add New Diagnostics
             </ButtonAddHoneydew>
           </div>
 

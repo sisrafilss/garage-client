@@ -28,9 +28,9 @@
     @apply font-medium hover:text-evergreen transition duration-300;
   }
 
-  .active {
+  /* .active {
     @apply text-evergreen;
-  }
+  } */
 
   .my-class {
     transition: 0.3s;
@@ -39,4 +39,8 @@
 
 .ReactCollapse--collapse {
   transition: height 500ms;
+}
+
+.active {
+  color: #1B9C85;
 }

@@ -1,13 +1,13 @@
 import { AiFillDelete } from "react-icons/ai";
 import { useLoaderData } from "react-router-dom";
-import HeadingH2 from "../../../../components/ReusableComponents/Headings/HeadingH2";
-import AdminDashboardPageContainer from "../../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
-import TableContainer from "../../../../components/ReusableComponents/AdminDashboard/Table/TableContainer";
-import TrHead from "../../../../components/ReusableComponents/AdminDashboard/Table/TrHead";
-import Th from "../../../../components/ReusableComponents/AdminDashboard/Table/Th";
-import Tr from "../../../../components/ReusableComponents/AdminDashboard/Table/Tr";
-import Td from "../../../../components/ReusableComponents/AdminDashboard/Table/Td";
-import Pagination from "../../../../components/ReusableComponents/Others/Pagination";
+import HeadingH2 from "../../../components/ReusableComponents/Headings/HeadingH2";
+import AdminDashboardPageContainer from "../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
+import TableContainer from "../../../components/ReusableComponents/AdminDashboard/Table/TableContainer";
+import TrHead from "../../../components/ReusableComponents/AdminDashboard/Table/TrHead";
+import Th from "../../../components/ReusableComponents/AdminDashboard/Table/Th";
+import Tr from "../../../components/ReusableComponents/AdminDashboard/Table/Tr";
+import Td from "../../../components/ReusableComponents/AdminDashboard/Table/Td";
+import Pagination from "../../../components/ReusableComponents/Others/Pagination";
 
 const ServiceCompleted = () => {
   const serviceCompleted = useLoaderData();

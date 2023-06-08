@@ -4,10 +4,10 @@ import TopBar from "../pages/AdminDashboard/AdminDashboard/TopBar/TopBar";
 
 const LayoutAdminDashboard = () => {
   return (
-    <div className="">
+    <div className="min-h-screen bg-white-smoke">
       <TopBar />
       <SidebarNavigation />
-      <div className="mt-20 pt-20 pb-10 bg-white-smoke w-full h-full">
+      <div className="mt-20 pt-[47px] pb-10 bg-white-smoke w-full h-full">
         <Outlet />
       </div>
     </div>

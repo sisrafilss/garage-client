@@ -22,14 +22,14 @@ const RepairPending = () => {
     "Actions",
   ];
   return (
-    <AdminDashboardPageContainer>
+    <AdminDashboardPageContainer className="">
       <div className="pt-24">
-        <TableContainer>
+        <TableContainer className="">
           <HeadingH2 className="text-center">
             Pending Repair Requests
           </HeadingH2>
-          <table className="w-full table-auto">
-            <thead>
+          <table className="w-full table-auto ">
+            <thead className="sticky top-[159px]">
               <TrHead>
                 {tableHeadings.map((item, idx) => (
                   <Th key={idx}>{item}</Th>

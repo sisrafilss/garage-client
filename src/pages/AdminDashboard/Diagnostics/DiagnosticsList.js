@@ -43,7 +43,7 @@ const DiagnosticsList = () => {
 
   return (
     <AdminDashboardPageContainer>
-      <div className="h-[80vh] pt-24 -z-10">
+      <div className="pt-24 -z-10">
         <TableContainer>
           <div className="flex justify-center">
             <ButtonAddHoneydew onClick={openAddModal}>
@@ -52,7 +52,7 @@ const DiagnosticsList = () => {
           </div>
 
           <table className="table-auto w-full">
-            <thead>
+            <thead className="sticky top-[159px]">
               <TrHead>
                 {tableHeadings.map((heading, idx) => (
                   <Th key={idx}>{heading}</Th>

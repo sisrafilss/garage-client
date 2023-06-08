@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
-import AdminDashboardPageContainer from "../../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
-import TableContainer from "../../../../components/ReusableComponents/AdminDashboard/Table/TableContainer";
-import Td from "../../../../components/ReusableComponents/AdminDashboard/Table/Td";
-import Tr from "../../../../components/ReusableComponents/AdminDashboard/Table/Tr";
-import Th from "../../../../components/ReusableComponents/AdminDashboard/Table/Th";
-import TrHead from "../../../../components/ReusableComponents/AdminDashboard/Table/TrHead";
-import ButtonAddHoneydew from "../../../../components/ReusableComponents/Buttons/ButtonAddHoneydew";
+import AdminDashboardPageContainer from "../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
+import TableContainer from "../../../components/ReusableComponents/AdminDashboard/Table/TableContainer";
+import Td from "../../../components/ReusableComponents/AdminDashboard/Table/Td";
+import Tr from "../../../components/ReusableComponents/AdminDashboard/Table/Tr";
+import Th from "../../../components/ReusableComponents/AdminDashboard/Table/Th";
+import TrHead from "../../../components/ReusableComponents/AdminDashboard/Table/TrHead";
+import ButtonAddHoneydew from "../../../components/ReusableComponents/Buttons/ButtonAddHoneydew";
 import { useLoaderData } from "react-router-dom";
-import ModalForm from "../../../../components/ReusableComponents/AdminDashboard/ModalForm";
+import ModalForm from "../../../components/ReusableComponents/AdminDashboard/ModalForm";
 
 const ServiceList = () => {
   const [addModal, setAddModal] = useState(false);
@@ -43,7 +43,7 @@ const ServiceList = () => {
 
   return (
     <AdminDashboardPageContainer>
-      <div className="h-[80vh] pt-24 -z-10">
+      <div className="pt-24 -z-10">
         <TableContainer>
           <div className="flex justify-center">
             <ButtonAddHoneydew onClick={openAddModal}>

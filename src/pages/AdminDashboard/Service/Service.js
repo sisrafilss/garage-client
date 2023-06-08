@@ -1,12 +1,12 @@
 import AdminDashboardPageContainer from "../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
 import NestedNavbar from "../../../components/ReusableComponents/AdminDashboard/NestedNavbar";
 
-const Repair = () => {
+const Service = () => {
   return (
-    <AdminDashboardPageContainer className="">
-      <NestedNavbar routeName="Repair" />
+    <AdminDashboardPageContainer>
+      <NestedNavbar routeName="Service" />
     </AdminDashboardPageContainer>
   );
 };
 
-export default Repair;
+export default Service;

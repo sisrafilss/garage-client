@@ -4,10 +4,10 @@ import { Outlet } from 'react-router-dom';
 
 const LayoutAdminDashboardRepair = () => {
     return (
-        <>
+        <div className='mb-6'>
             <Repair />
             <Outlet />
-        </>
+        </div>
     );
 };
 

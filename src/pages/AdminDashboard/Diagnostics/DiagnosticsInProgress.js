@@ -28,7 +28,7 @@ const DiagnosticsInProgress = () => {
             In-Progress Diagnostic Requests
           </HeadingH2>
           <table className="w-full table-auto">
-            <thead>
+            <thead className="sticky top-[159px]">
               <TrHead>
                 {tableHeadings.map((item, idx) => (
                   <Th key={idx}>{item}</Th>

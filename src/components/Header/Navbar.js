@@ -13,6 +13,7 @@ const Navbar = ({ showMobileMenu, openModal }) => {
       <MenuItem to="">Home</MenuItem>
       <MenuItem to="about">About</MenuItem>
       <MenuItem to="services">Services</MenuItem>
+      <MenuItem to="dashboard">Dashboard</MenuItem>
       <MenuItem to="login">Login</MenuItem>
       <ButtonSmallGreen onClick={openModal}>Get a Quote</ButtonSmallGreen>
     </div>

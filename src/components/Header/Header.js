@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="bg-mintfrost py-3">
+      <div className="bg-mintfrost py-3 sticky top-0 z-10">
         <nav className="container flex justify-between items-center max-sm:relative  text-twilight">
           <div>
             <Logo />

@@ -8,38 +8,12 @@ import Tr from "../../../../components/ReusableComponents/AdminDashboard/Table/T
 import TrHead from "../../../../components/ReusableComponents/AdminDashboard/Table/TrHead";
 import HeadingH2 from "../../../../components/ReusableComponents/Headings/HeadingH2";
 import Pagination from "../../../../components/ReusableComponents/Others/Pagination";
-
-const servicePending = [
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-
- 
-];
+import { useLoaderData } from "react-router-dom";
 
 const ServicePending = () => {
+
+  const servicePending = useLoaderData();
+
   const tableHeadings = [
     "#",
     "Title",

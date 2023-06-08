@@ -1,4 +1,5 @@
 import { AiFillDelete } from "react-icons/ai";
+import { useLoaderData } from "react-router-dom";
 import HeadingH2 from "../../../../components/ReusableComponents/Headings/HeadingH2";
 import AdminDashboardPageContainer from "../../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
 import TableContainer from "../../../../components/ReusableComponents/AdminDashboard/Table/TableContainer";
@@ -6,38 +7,10 @@ import TrHead from "../../../../components/ReusableComponents/AdminDashboard/Tab
 import Th from "../../../../components/ReusableComponents/AdminDashboard/Table/Th";
 import Tr from "../../../../components/ReusableComponents/AdminDashboard/Table/Tr";
 import Td from "../../../../components/ReusableComponents/AdminDashboard/Table/Td";
-import { TiTick } from "react-icons/ti";
 import Pagination from "../../../../components/ReusableComponents/Others/Pagination";
 
-const serviceCompleted = [
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-];
-
 const ServiceCompleted = () => {
+  const serviceCompleted = useLoaderData();
   const tableHeadings = [
     "#",
     "Title",

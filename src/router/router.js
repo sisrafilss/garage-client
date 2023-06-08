@@ -12,7 +12,6 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import LayoutAdminDashboard from "../Layout/LayoutAdminDashboard";
 import AdminDashboard from "../pages/AdminDashboard/AdminDashboard/AdminDashboard";
-import Repair from "../pages/AdminDashboard/Repair/Repair/Repair";
 import Blog from "../pages/AdminDashboard/Blog/Blog/Blog";
 import Testimonial from "../pages/AdminDashboard/Testimonial/Testimonial/Testimonial";
 import ServiceList from "../pages/AdminDashboard/Service/ServiceList/ServiceList";
@@ -25,6 +24,11 @@ import DiagnosticsList from "../pages/AdminDashboard/Diagnostics/DiagnosticsList
 import DiagnosticsPending from "../pages/AdminDashboard/Diagnostics/DiagnosticsPending";
 import DiagnosticsInProgress from "../pages/AdminDashboard/Diagnostics/DiagnosticsInProgress";
 import DiagnosticsCompleted from "../pages/AdminDashboard/Diagnostics/DiagnosticsCompleted";
+import LayoutAdminDashboardRepair from "../Layout/LayoutAdminDashboardRepair";
+import RepairList from "../pages/AdminDashboard/Repair/RepairList";
+import RepairPending from "../pages/AdminDashboard/Repair/RepairPending";
+import RepairInProgress from "../pages/AdminDashboard/Repair/RepairInProgress";
+import RepairCompleted from "../pages/AdminDashboard/Repair/RepairCompleted";
 
 export const router = createBrowserRouter([
   {
@@ -105,14 +109,23 @@ export const router = createBrowserRouter([
           {
             path: "pending",
             element: <ServicePending />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/service/pending.json");
+            },
           },
           {
             path: "in-progress",
             element: <ServiceInProgress />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/service/inProgress.json");
+            },
           },
           {
             path: "completed",
             element: <ServiceCompleted />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/service/completed.json");
+            },
           },
         ],
       },
@@ -124,35 +137,67 @@ export const router = createBrowserRouter([
             path: "",
             element: <DiagnosticsList />,
             loader: async () => {
-              return fetch("/data/adminDashboard/diagnostics/diagnosticsList.json")
-            }
+              return fetch(
+                "/data/adminDashboard/diagnostics/diagnosticsList.json"
+              );
+            },
           },
           {
             path: "pending",
             element: <DiagnosticsPending />,
             loader: async () => {
-              return fetch("/data/adminDashboard/diagnostics/pending.json")
-            }
+              return fetch("/data/adminDashboard/diagnostics/pending.json");
+            },
           },
           {
             path: "in-progress",
             element: <DiagnosticsInProgress />,
             loader: async () => {
-              return fetch("/data/adminDashboard/diagnostics/inProgress.json")
-            }
+              return fetch("/data/adminDashboard/diagnostics/inProgress.json");
+            },
           },
           {
             path: "completed",
             element: <DiagnosticsCompleted />,
             loader: async () => {
-              return fetch("/data/adminDashboard/diagnostics/completed.json")
-            }
-          }
-        ]
+              return fetch("/data/adminDashboard/diagnostics/completed.json");
+            },
+          },
+        ],
       },
       {
         path: "repair",
-        element: <Repair />,
+        element: <LayoutAdminDashboardRepair />,
+        children: [
+          {
+            path: "",
+            element: <RepairList />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/repair/repairList.json");
+            },
+          },
+          {
+            path: "pending",
+            element: <RepairPending />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/repair/pending.json");
+            },
+          },
+          {
+            path: "in-progress",
+            element: <RepairInProgress />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/repair/inProgress.json");
+            },
+          },
+          {
+            path: "completed",
+            element: <RepairCompleted />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/repair/completed.json");
+            },
+          },
+        ],
       },
       {
         path: "blog",

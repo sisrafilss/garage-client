@@ -1,5 +1,6 @@
 import { TiTick } from "react-icons/ti";
 import { AiFillDelete } from "react-icons/ai";
+import { useLoaderData } from "react-router-dom";
 import AdminDashboardPageContainer from "../../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
 import TableContainer from "../../../../components/ReusableComponents/AdminDashboard/Table/TableContainer";
 import Td from "../../../../components/ReusableComponents/AdminDashboard/Table/Td";
@@ -10,37 +11,10 @@ import HeadingH2 from "../../../../components/ReusableComponents/Headings/Headin
 import Pagination from "../../../../components/ReusableComponents/Others/Pagination";
 
 
-const servicePending = [
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
-  {
-    title: "Brake discs and pads replacement (front)",
-    email: "john.doe.3@gmail.com",
-    placedAt: "03 June 2023 | 02:55:00 PM",
-  },
 
- 
-];
 
 const ServiceInProgress = () => {
+  const servicePending = useLoaderData();
   const tableHeadings = [
     "#",
     "Title",

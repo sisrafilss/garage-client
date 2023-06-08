@@ -10,8 +10,8 @@ import Tr from "../../../components/ReusableComponents/AdminDashboard/Table/Tr";
 import Td from "../../../components/ReusableComponents/AdminDashboard/Table/Td";
 import Pagination from "../../../components/ReusableComponents/Others/Pagination";
 
-const DiagnosticsInProgress = () => {
-  const diagnosticsInProgress = useLoaderData();
+const RepairInProgress = () => {
+  const repairInProgress = useLoaderData();
 
   const tableHeadings = [
     "#",
@@ -25,7 +25,7 @@ const DiagnosticsInProgress = () => {
       <div className="pt-24">
         <TableContainer>
           <HeadingH2 className="text-center">
-            In-Progress Diagnostic Requests
+            In-Progress Repair Requests
           </HeadingH2>
           <table className="w-full table-auto">
             <thead>
@@ -36,7 +36,7 @@ const DiagnosticsInProgress = () => {
               </TrHead>
             </thead>
             <tbody>
-              {diagnosticsInProgress.map((item, idx) => (
+              {repairInProgress.map((item, idx) => (
                 <Tr key={idx}>
                   <Td className="px-4">{idx + 1}</Td>
                   {Object.keys(item).map((key, idx2) => (
@@ -65,4 +65,4 @@ const DiagnosticsInProgress = () => {
   );
 };
 
-export default DiagnosticsInProgress;
+export default RepairInProgress;

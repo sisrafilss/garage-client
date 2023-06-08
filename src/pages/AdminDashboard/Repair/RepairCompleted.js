@@ -1,4 +1,3 @@
-import { TiTick } from "react-icons/ti";
 import { AiFillDelete } from "react-icons/ai";
 import { useLoaderData } from "react-router-dom";
 import AdminDashboardPageContainer from "../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
@@ -10,9 +9,8 @@ import Tr from "../../../components/ReusableComponents/AdminDashboard/Table/Tr";
 import Td from "../../../components/ReusableComponents/AdminDashboard/Table/Td";
 import Pagination from "../../../components/ReusableComponents/Others/Pagination";
 
-const DiagnosticsInProgress = () => {
-  const diagnosticsInProgress = useLoaderData();
-
+const RepairCompleted = () => {
+  const repairCompleted = useLoaderData();
   const tableHeadings = [
     "#",
     "Title",
@@ -25,7 +23,7 @@ const DiagnosticsInProgress = () => {
       <div className="pt-24">
         <TableContainer>
           <HeadingH2 className="text-center">
-            In-Progress Diagnostic Requests
+            Completed Repair Requests
           </HeadingH2>
           <table className="w-full table-auto">
             <thead>
@@ -36,7 +34,7 @@ const DiagnosticsInProgress = () => {
               </TrHead>
             </thead>
             <tbody>
-              {diagnosticsInProgress.map((item, idx) => (
+              {repairCompleted.map((item, idx) => (
                 <Tr key={idx}>
                   <Td className="px-4">{idx + 1}</Td>
                   {Object.keys(item).map((key, idx2) => (
@@ -44,10 +42,6 @@ const DiagnosticsInProgress = () => {
                   ))}
                   <Td>
                     <span className="flex space-x-6 justify-center">
-                      <TiTick
-                        title="Mark as Completed"
-                        className="text-2xl cursor-pointer text-evergreen"
-                      />
                       <AiFillDelete
                         title="Delete"
                         className="text-2xl cursor-pointer text-red-600"
@@ -65,4 +59,4 @@ const DiagnosticsInProgress = () => {
   );
 };
 
-export default DiagnosticsInProgress;
+export default RepairCompleted;

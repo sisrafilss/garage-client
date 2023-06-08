@@ -1,5 +1,5 @@
 import { TiTick } from "react-icons/ti";
-import { AiFillDelete } from "react-icons/ai";
+import { RxCrossCircled } from "react-icons/rx";
 import { useLoaderData } from "react-router-dom";
 import AdminDashboardPageContainer from "../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
 import TableContainer from "../../../components/ReusableComponents/AdminDashboard/Table/TableContainer";
@@ -10,8 +10,9 @@ import Tr from "../../../components/ReusableComponents/AdminDashboard/Table/Tr";
 import Td from "../../../components/ReusableComponents/AdminDashboard/Table/Td";
 import Pagination from "../../../components/ReusableComponents/Others/Pagination";
 
-const DiagnosticsInProgress = () => {
-  const diagnosticsInProgress = useLoaderData();
+
+const RepairPending = () => {
+  const repairPending = useLoaderData();
 
   const tableHeadings = [
     "#",
@@ -25,7 +26,7 @@ const DiagnosticsInProgress = () => {
       <div className="pt-24">
         <TableContainer>
           <HeadingH2 className="text-center">
-            In-Progress Diagnostic Requests
+            Pending Repair Requests
           </HeadingH2>
           <table className="w-full table-auto">
             <thead>
@@ -36,7 +37,7 @@ const DiagnosticsInProgress = () => {
               </TrHead>
             </thead>
             <tbody>
-              {diagnosticsInProgress.map((item, idx) => (
+              {repairPending.map((item, idx) => (
                 <Tr key={idx}>
                   <Td className="px-4">{idx + 1}</Td>
                   {Object.keys(item).map((key, idx2) => (
@@ -45,11 +46,11 @@ const DiagnosticsInProgress = () => {
                   <Td>
                     <span className="flex space-x-6 justify-center">
                       <TiTick
-                        title="Mark as Completed"
+                        title="Approve"
                         className="text-2xl cursor-pointer text-evergreen"
                       />
-                      <AiFillDelete
-                        title="Delete"
+                      <RxCrossCircled
+                        title="Reject"
                         className="text-2xl cursor-pointer text-red-600"
                       />
                     </span>
@@ -65,4 +66,4 @@ const DiagnosticsInProgress = () => {
   );
 };
 
-export default DiagnosticsInProgress;
+export default RepairPending;

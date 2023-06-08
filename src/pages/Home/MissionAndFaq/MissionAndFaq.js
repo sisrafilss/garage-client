@@ -26,7 +26,7 @@ import FAQ from "./FAQ/FAQ";
 
 const MissionAndFaq = ({ className }) => {
   const [faqData, setFaqData] = useState({});
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleAccordion = (index) => {
     setActiveIndex(index === activeIndex ? null : index);

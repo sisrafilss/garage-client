@@ -5,7 +5,7 @@ import NavItem from "./NavItem";
 const SidebarNavigation = () => {
   return (
     <div className="-mt-20">
-      <div className="w-60 bg-mintfrost h-[110%] fixed space-y-10 pl-10 pt-10 shadow-sm">
+      <div className="w-60 bg-white h-[110%] fixed space-y-10 pl-10 pt-10 shadow-sm">
         <Logo />
         <div>
           <div className="flex flex-col space-y-8">

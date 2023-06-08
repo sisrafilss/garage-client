@@ -7,13 +7,14 @@ import FeatureContainer from "../../components/ResponsiveLayout/FeatureContainer
 import HeadingH3 from "../../components/ReusableComponents/Headings/HeadingH3";
 import BodyText from "../../components/ReusableComponents/Others/BodyText";
 import LinkedButton from "../Login/LinkedButton";
-import Input from "./Input";
+
 import ButtonRegularTwilight from "../../components/ReusableComponents/Buttons/ButtonRegularTwilight";
 import ButtonRegularGreen from "../../components/ReusableComponents/Buttons/ButtonRegularGreen";
 import BasketContainer from "../../components/ResponsiveLayout/BasketContainer";
 import Basket from "../ServiceRequest/Basket";
 import TotalAtBottom from "../ServiceRequest/ServiceDetail/TotalAtBottom";
-
+import TextArea from "../../components/ReusableComponents/Form/TextArea";
+import Input from "../../components/ReusableComponents/Form/Input";
 
 const ConfirmOrder = () => {
   // State for basket
@@ -59,17 +60,7 @@ const ConfirmOrder = () => {
                     <Input label="Create Password" type="password" />
                     <Input label="Confirm Password" type="password" />
                   </div>
-                  <div>
-                    <label className="text-sm">
-                      Additional Detail (Optionals)
-                    </label>
-                    <textarea
-                      cols="10"
-                      rows="5"
-                      className="bg-light-gray w-full px-2 py-2 rounded outline-light-gray focus:bg-white focus:bg-opacity-80"
-                      type="text"
-                    />
-                  </div>
+                  <TextArea label="Additional Detail (Optionals)" />
                 </form>
                 <div className="flex justify-between items-center">
                   <ButtonRegularTwilight>Back</ButtonRegularTwilight>
@@ -84,7 +75,7 @@ const ConfirmOrder = () => {
           </BasketContainer>
         </ColsWrapper>
 
-        <TotalAtBottom totalPrice={totalPrice}  />
+        <TotalAtBottom totalPrice={totalPrice} />
       </SectionWrapper>
     </div>
   );

@@ -1,8 +1,7 @@
 import ButtonRegularGreen from "../../components/ReusableComponents/Buttons/ButtonRegularGreen";
-
+import InputField from "../../components/ReusableComponents/Form/InputField";
 import HeadingH1 from "../../components/ReusableComponents/Headings/HeadingH1";
 import BodyText from "../../components/ReusableComponents/Others/BodyText";
-import InputField from "../../components/ReusableComponents/Others/InputField";
 import FormContainer from "../Login/FormContainer";
 import FormWrapper from "../Login/FormWrapper";
 import LinkedButton from "../Login/LinkedButton";

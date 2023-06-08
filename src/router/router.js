@@ -12,7 +12,6 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import LayoutAdminDashboard from "../Layout/LayoutAdminDashboard";
 import AdminDashboard from "../pages/AdminDashboard/AdminDashboard/AdminDashboard";
-import Diagnostics from "../pages/AdminDashboard/Diagnostics/Diagnostics/Diagnostics";
 import Repair from "../pages/AdminDashboard/Repair/Repair/Repair";
 import Blog from "../pages/AdminDashboard/Blog/Blog/Blog";
 import Testimonial from "../pages/AdminDashboard/Testimonial/Testimonial/Testimonial";
@@ -21,6 +20,11 @@ import LayoutAdminDashboardService from "../Layout/LayoutAdminDashboardService";
 import ServicePending from "../pages/AdminDashboard/Service/ServicePending/ServicePending";
 import ServiceInProgress from "../pages/AdminDashboard/Service/ServiceInProgress/ServiceInProgress";
 import ServiceCompleted from "../pages/AdminDashboard/Service/ServiceCompleted/ServiceCompleted";
+import LayoutAdminDashboardDiagnostics from "../Layout/LayoutAdminDashboardDiagnostics";
+import DiagnosticsList from "../pages/AdminDashboard/Diagnostics/DiagnosticsList";
+import DiagnosticsPending from "../pages/AdminDashboard/Diagnostics/DiagnosticsPending";
+import DiagnosticsInProgress from "../pages/AdminDashboard/Diagnostics/DiagnosticsInProgress";
+import DiagnosticsCompleted from "../pages/AdminDashboard/Diagnostics/DiagnosticsCompleted";
 
 export const router = createBrowserRouter([
   {
@@ -114,7 +118,37 @@ export const router = createBrowserRouter([
       },
       {
         path: "diagnostics",
-        element: <Diagnostics />,
+        element: <LayoutAdminDashboardDiagnostics />,
+        children: [
+          {
+            path: "",
+            element: <DiagnosticsList />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/diagnostics/diagnosticsList.json")
+            }
+          },
+          {
+            path: "pending",
+            element: <DiagnosticsPending />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/diagnostics/pending.json")
+            }
+          },
+          {
+            path: "in-progress",
+            element: <DiagnosticsInProgress />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/diagnostics/inProgress.json")
+            }
+          },
+          {
+            path: "completed",
+            element: <DiagnosticsCompleted />,
+            loader: async () => {
+              return fetch("/data/adminDashboard/diagnostics/completed.json")
+            }
+          }
+        ]
       },
       {
         path: "repair",

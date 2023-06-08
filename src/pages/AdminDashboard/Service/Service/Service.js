@@ -1,10 +1,10 @@
 import AdminDashboardPageContainer from "../../../../components/ReusableComponents/AdminDashboard/AdminDashboardPageContainer";
-import NavServiceToggle from "./NavServiceToggle";
+import NestedNavbar from "../../../../components/ReusableComponents/AdminDashboard/NestedNavbar";
 
 const Service = () => {
   return (
     <AdminDashboardPageContainer>
-      <NavServiceToggle />
+      <NestedNavbar routeName="Service" />
     </AdminDashboardPageContainer>
   );
 };

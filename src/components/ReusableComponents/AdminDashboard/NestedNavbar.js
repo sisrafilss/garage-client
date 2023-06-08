@@ -1,11 +1,10 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
-const NavServiceToggle = () => {
+const NestedNavbar = ({routeName}) => {
   return (
    <div className="flex justify-center z-10">
      <div className="fixed flex justify-between rounded shadow-sm bg-white py-4 px-8 space-x-6">
-      <NavLink to="" end>Service List</NavLink>
+      <NavLink to="" end>{routeName} List</NavLink>
       <Separator />
       <NavLink to="pending" end>Pending</NavLink>
       <Separator />
@@ -17,7 +16,7 @@ const NavServiceToggle = () => {
   );
 };
 
-export default NavServiceToggle;
+export default NestedNavbar;
 
 
 const Separator = () => {
